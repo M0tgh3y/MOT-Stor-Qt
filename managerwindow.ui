@@ -14,7 +14,7 @@
    <string>Form</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(255, 170, 127);</string>
+   <string notr="true">background-color: rgb(170, 170, 255)</string>
   </property>
   <widget class="QLabel" name="username">
    <property name="geometry">
@@ -151,6 +151,9 @@ align-items: center;</string>
      <verstretch>0</verstretch>
     </sizepolicy>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
    <property name="styleSheet">
     <string notr="true">QPushButton {
     font-family: &quot;Open Sans&quot;, sans-serif;
@@ -199,6 +202,9 @@ QPushButton:pressed {
      <horstretch>0</horstretch>
      <verstretch>0</verstretch>
     </sizepolicy>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton {

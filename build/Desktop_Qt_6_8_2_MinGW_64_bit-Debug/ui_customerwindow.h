@@ -34,7 +34,7 @@ public:
         if (customerwindow->objectName().isEmpty())
             customerwindow->setObjectName("customerwindow");
         customerwindow->resize(400, 400);
-        customerwindow->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 170, 127)"));
+        customerwindow->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 170, 127)"));
         ok = new QPushButton(customerwindow);
         ok->setObjectName("ok");
         ok->setGeometry(QRect(70, 300, 80, 35));
@@ -43,6 +43,7 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(ok->sizePolicy().hasHeightForWidth());
         ok->setSizePolicy(sizePolicy);
+        ok->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
         ok->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    font-family: \"Open Sans\", sans-serif;\n"
 "    font-size: 16px;\n"
@@ -76,6 +77,7 @@ public:
         back->setGeometry(QRect(250, 300, 80, 35));
         sizePolicy.setHeightForWidth(back->sizePolicy().hasHeightForWidth());
         back->setSizePolicy(sizePolicy);
+        back->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
         back->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    font-family: \"Open Sans\", sans-serif;\n"
 "    font-size: 16px;\n"

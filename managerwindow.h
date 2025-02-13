@@ -13,7 +13,10 @@ public:
     ~ManagerWindow();
 
 private slots:
-    //void on_button_clicked();
+
+    void on_ok_clicked();
+
+    void on_back_clicked();
 
 private:
     Ui::managerwindow *ui;

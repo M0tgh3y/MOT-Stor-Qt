@@ -34,7 +34,7 @@ public:
         if (managerwindow->objectName().isEmpty())
             managerwindow->setObjectName("managerwindow");
         managerwindow->resize(400, 400);
-        managerwindow->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 170, 127);"));
+        managerwindow->setStyleSheet(QString::fromUtf8("background-color: rgb(170, 170, 255)"));
         username = new QLabel(managerwindow);
         username->setObjectName("username");
         username->setGeometry(QRect(70, 90, 140, 30));
@@ -109,6 +109,7 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(ok->sizePolicy().hasHeightForWidth());
         ok->setSizePolicy(sizePolicy);
+        ok->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
         ok->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    font-family: \"Open Sans\", sans-serif;\n"
 "    font-size: 16px;\n"
@@ -142,6 +143,7 @@ public:
         back->setGeometry(QRect(250, 300, 80, 35));
         sizePolicy.setHeightForWidth(back->sizePolicy().hasHeightForWidth());
         back->setSizePolicy(sizePolicy);
+        back->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
         back->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    font-family: \"Open Sans\", sans-serif;\n"
 "    font-size: 16px;\n"
