@@ -19,6 +19,7 @@ HEADERS += \
     mainwindow.h \
     managerwindow.h
 
+
 FORMS += \
     mainwindow.ui
 

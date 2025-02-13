@@ -1,7 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "managerwindow.h"
 #include "customerwindow.h"
+#include "managerwindow.h"
 #include <QIcon>
 
 MainWindow::MainWindow(QWidget *parent)
