@@ -1,22 +1,22 @@
 #ifndef MANAGERWINDOW_H
 #define MANAGERWINDOW_H
 
-#include <QWidget>  // Include the base QWidget class
-#include <QPushButton>  // Include any specific widgets you need
-#include <QLabel>  // For example, QLabel
-#include <QVBoxLayout>  // Layouts to manage widget positioning
+#include <QWidget>
+#include "ui_managerwindow.h"
 
 class ManagerWindow : public QWidget
 {
-    Q_OBJECT  // Required for Qt's signal/slot mechanism
+    Q_OBJECT
 
 public:
-    explicit ManagerWindow(QWidget *parent = nullptr);  // Constructor
-    ~ManagerWindow();  // Destructor
+    explicit ManagerWindow(QWidget *parent = nullptr);
+    ~ManagerWindow();
+
+private slots:
+    //void on_button_clicked();
 
 private:
-    QPushButton *loginButton;  // Example widget
-    QLabel *label;  // Example widget
+    Ui::managerwindow *ui;
 };
 
 #endif // MANAGERWINDOW_H

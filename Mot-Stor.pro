@@ -21,7 +21,9 @@ HEADERS += \
 
 
 FORMS += \
-    mainwindow.ui
+    customerwindow.ui \
+    mainwindow.ui \
+    managerwindow.ui
 
 TRANSLATIONS += \
     Mot-Stor_en_US.ts
