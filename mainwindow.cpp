@@ -23,6 +23,7 @@ void MainWindow::on_manager_clicked()
 {
     ManagerWindow *managerWin = new ManagerWindow();
     managerWin->show();
+    this->close();
 }
 
 
@@ -30,5 +31,6 @@ void MainWindow::on_customer_clicked()
 {
     CustomerWindow *customerWin = new CustomerWindow();
     customerWin->show();
+    this->close();
 }
 

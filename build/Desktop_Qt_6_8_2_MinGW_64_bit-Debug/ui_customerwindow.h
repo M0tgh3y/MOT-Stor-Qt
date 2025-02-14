@@ -28,21 +28,27 @@ public:
     QLineEdit *useredit;
     QLabel *username;
     QLabel *title;
+    QPushButton *pushButton;
 
     void setupUi(QWidget *customerwindow)
     {
         if (customerwindow->objectName().isEmpty())
             customerwindow->setObjectName("customerwindow");
         customerwindow->resize(400, 400);
+        QSizePolicy sizePolicy(QSizePolicy::Policy::Preferred, QSizePolicy::Policy::Fixed);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(customerwindow->sizePolicy().hasHeightForWidth());
+        customerwindow->setSizePolicy(sizePolicy);
         customerwindow->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 170, 127)"));
         ok = new QPushButton(customerwindow);
         ok->setObjectName("ok");
         ok->setGeometry(QRect(70, 300, 80, 35));
-        QSizePolicy sizePolicy(QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Maximum);
-        sizePolicy.setHorizontalStretch(0);
-        sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(ok->sizePolicy().hasHeightForWidth());
-        ok->setSizePolicy(sizePolicy);
+        QSizePolicy sizePolicy1(QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Maximum);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(ok->sizePolicy().hasHeightForWidth());
+        ok->setSizePolicy(sizePolicy1);
         ok->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
         ok->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    font-family: \"Open Sans\", sans-serif;\n"
@@ -75,8 +81,8 @@ public:
         back = new QPushButton(customerwindow);
         back->setObjectName("back");
         back->setGeometry(QRect(250, 300, 80, 35));
-        sizePolicy.setHeightForWidth(back->sizePolicy().hasHeightForWidth());
-        back->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(back->sizePolicy().hasHeightForWidth());
+        back->setSizePolicy(sizePolicy1);
         back->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
         back->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    font-family: \"Open Sans\", sans-serif;\n"
@@ -113,7 +119,6 @@ public:
 "    font-size: 16px;\n"
 "    letter-spacing: 2px;\n"
 "    text-decoration: none;\n"
-"    text-transform: uppercase;\n"
 "    color: #000;\n"
 "\n"
 "border: 3px solid #000;   /* Solid border */\n"
@@ -139,7 +144,6 @@ public:
 "    font-size: 16px;\n"
 "    letter-spacing: 2px;\n"
 "    text-decoration: none;\n"
-"    text-transform: uppercase;\n"
 "    color: #000;\n"
 "\n"
 "border: 3px solid #000;   /* Solid border */\n"
@@ -172,6 +176,34 @@ public:
 "display: flex;\n"
 "justify-content: center;\n"
 "align-items: center;"));
+        pushButton = new QPushButton(customerwindow);
+        pushButton->setObjectName("pushButton");
+        pushButton->setGeometry(QRect(0, 360, 400, 30));
+        pushButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    font-family: \"Open Sans\", sans-serif;\n"
+"    font-size: 12px;\n"
+"    letter-spacing: 1px;\n"
+"    text-decoration: none;\n"
+"    color: #000;\n"
+"    border: none;   /* Solid border */\n"
+"    padding: 0.25em 0.5em;\n"
+"    border-radius: 15px 225px 255px 15px;  /* Custom border radius */\n"
+"    position: relative;\n"
+"    transition: all 0.3s ease; /* Smooth transition for hover effect */\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(113, 227, 168);  /* Change background color on hover */    /* Lighter border on hover */\n"
+"    transform: scale(1.05);      /* Slightly increase the size on hover */\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"      /* Darker border on press */\n"
+"    background-color: #f0f0f0;  /* Change background color when pressed */\n"
+"    top: 5px;\n"
+"    left: 5px;\n"
+"}\n"
+""));
 
         retranslateUi(customerwindow);
 
@@ -186,6 +218,7 @@ public:
         password->setText(QCoreApplication::translate("customerwindow", "password:", nullptr));
         username->setText(QCoreApplication::translate("customerwindow", "Username: ", nullptr));
         title->setText(QCoreApplication::translate("customerwindow", "customer login", nullptr));
+        pushButton->setText(QCoreApplication::translate("customerwindow", "New to MOT STOR? Create an accunt", nullptr));
     } // retranslateUi
 
 };

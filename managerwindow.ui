@@ -52,7 +52,6 @@
     font-size: 16px;
     letter-spacing: 2px;
     text-decoration: none;
-    text-transform: uppercase;
     color: #000;
 
 border: 3px solid #000;   /* Solid border */
@@ -99,7 +98,6 @@ border: 3px solid #000;   /* Solid border */
     font-size: 16px;
     letter-spacing: 2px;
     text-decoration: none;
-    text-transform: uppercase;
     color: #000;
 
 border: 3px solid #000;   /* Solid border */

@@ -1,0 +1,10 @@
+debug/addnewcustomer.o
+debug/customerwindow.o
+debug/main.o
+debug/mainwindow.o
+debug/managerwindow.o
+debug/qrc_qmake_qmake_qm_files.o
+debug/moc_addnewcustomer.o
+debug/moc_customerwindow.o
+debug/moc_mainwindow.o
+debug/moc_managerwindow.o

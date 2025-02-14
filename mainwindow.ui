@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>300</width>
-    <height>300</height>
+    <width>270</width>
+    <height>248</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,8 +20,8 @@
    <widget class="QPushButton" name="manager">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>50</y>
+      <x>45</x>
+      <y>40</y>
       <width>180</width>
       <height>70</height>
      </rect>
@@ -69,8 +69,8 @@ QPushButton:pressed {
    <widget class="QPushButton" name="customer">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>150</y>
+      <x>45</x>
+      <y>130</y>
       <width>180</width>
       <height>70</height>
      </rect>
@@ -121,7 +121,7 @@ QPushButton:pressed {
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>300</width>
+     <width>270</width>
      <height>25</height>
     </rect>
    </property>

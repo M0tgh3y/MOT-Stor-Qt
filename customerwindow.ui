@@ -10,6 +10,12 @@
     <height>400</height>
    </rect>
   </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
@@ -134,7 +140,6 @@ QPushButton:pressed {
     font-size: 16px;
     letter-spacing: 2px;
     text-decoration: none;
-    text-transform: uppercase;
     color: #000;
 
 border: 3px solid #000;   /* Solid border */
@@ -181,7 +186,6 @@ border: 3px solid #000;   /* Solid border */
     font-size: 16px;
     letter-spacing: 2px;
     text-decoration: none;
-    text-transform: uppercase;
     color: #000;
 
 border: 3px solid #000;   /* Solid border */
@@ -238,6 +242,46 @@ align-items: center;</string>
    </property>
    <property name="text">
     <string>customer login</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>360</y>
+     <width>400</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    font-family: &quot;Open Sans&quot;, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #000;
+    border: none;   /* Solid border */
+    padding: 0.25em 0.5em;
+    border-radius: 15px 225px 255px 15px;  /* Custom border radius */
+    position: relative;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+QPushButton:hover {
+    background-color: rgb(113, 227, 168);  /* Change background color on hover */    /* Lighter border on hover */
+    transform: scale(1.05);      /* Slightly increase the size on hover */
+}
+
+QPushButton:pressed {
+      /* Darker border on press */
+    background-color: #f0f0f0;  /* Change background color when pressed */
+    top: 5px;
+    left: 5px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>New to MOT STOR? Create an accunt</string>
    </property>
   </widget>
  </widget>

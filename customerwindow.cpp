@@ -1,7 +1,11 @@
 #include "customerwindow.h"
 #include "ui_customerwindow.h"
+#include "addnewcustomer.h"
+#include "mainwindow.h"
 #include <QIcon>
 #include <QMessageBox>
+#include <vector>
+
 
 CustomerWindow::CustomerWindow(QWidget *parent)
     : QWidget(parent),
@@ -23,34 +27,36 @@ CustomerWindow::~CustomerWindow()
     delete ui;
 }
 
-QString nameC[] = {"mot", "ghey"};
-QString passC[] = {"1383mot", "2004ghey"};
+std::vector<QString> nameC = {"mot", "ghey"};
+std::vector<QString> passC = {"1383mot", "2004ghey"};
 
-void CustomerWindow::on_ok_clicked()
-{
-    QString unameC = ui->useredit->text();
-    QString upassC = ui->passedit->text();
+void CustomerWindow::on_ok_clicked() {
+    QString unameC = ui->useredit->text().trimmed();
+    QString upassC = ui->passedit->text().trimmed();
 
-    bool f = false;
-
-    int numUsers = sizeof(nameC) / sizeof(nameC[0]);
-
-    for (int i = 0; i < numUsers; i++) {
+    for (size_t i = 0; i < nameC.size(); i++) {
         if (unameC == nameC[i] && upassC == passC[i]) {
             QMessageBox::information(this, "Welcome", "Welcome " + unameC);
-            f = true;
             return;
         }
     }
 
-    if (!f) {
-        QMessageBox::information(this, "Error", "Invalid username or password");
-        return;
-    }
+    QMessageBox::warning(this, "Error", "Invalid username or password");
 }
 
 void CustomerWindow::on_back_clicked()
 {
+    this->close();
+
+    MainWindow *mainWindow = new MainWindow();
+    mainWindow->show();
+}
+
+
+void CustomerWindow::on_pushButton_clicked()
+{
+    addnewcustomer *addNewCustomerWindow = new addnewcustomer();
+    addNewCustomerWindow->show();
     this->close();
 }
 

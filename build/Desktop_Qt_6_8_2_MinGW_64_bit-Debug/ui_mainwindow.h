@@ -32,13 +32,13 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(300, 300);
+        MainWindow->resize(270, 248);
         MainWindow->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 170, 127);"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         manager = new QPushButton(centralwidget);
         manager->setObjectName("manager");
-        manager->setGeometry(QRect(60, 50, 180, 70));
+        manager->setGeometry(QRect(45, 40, 180, 70));
         QSizePolicy sizePolicy(QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Maximum);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -74,7 +74,7 @@ public:
 ""));
         customer = new QPushButton(centralwidget);
         customer->setObjectName("customer");
-        customer->setGeometry(QRect(60, 150, 180, 70));
+        customer->setGeometry(QRect(45, 130, 180, 70));
         sizePolicy.setHeightForWidth(customer->sizePolicy().hasHeightForWidth());
         customer->setSizePolicy(sizePolicy);
         customer->setStyleSheet(QString::fromUtf8("QPushButton {\n"
@@ -108,7 +108,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 300, 25));
+        menubar->setGeometry(QRect(0, 0, 270, 25));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName("statusbar");

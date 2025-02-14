@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include "ui_customerwindow.h"
+#include "addnewcustomer.h"
 
 class CustomerWindow : public QWidget
 {
@@ -17,6 +18,8 @@ private slots:
     void on_ok_clicked();
 
     void on_back_clicked();
+
+    void on_pushButton_clicked();
 
 private:
     Ui::customerwindow *ui;
