@@ -26,6 +26,7 @@ public:
     QLineEdit *useredit;
     QLabel *password;
     QPushButton *pushButton;
+    QPushButton *pushButton_2;
 
     void setupUi(QWidget *addnewcustomer)
     {
@@ -35,7 +36,7 @@ public:
         addnewcustomer->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 170, 127);"));
         username = new QLabel(addnewcustomer);
         username->setObjectName("username");
-        username->setGeometry(QRect(70, 90, 140, 30));
+        username->setGeometry(QRect(70, 70, 140, 30));
         username->setStyleSheet(QString::fromUtf8("font-family: \"Open Sans\", sans-serif;\n"
 "    font-size: 16px;\n"
 "    letter-spacing: 2px;\n"
@@ -60,7 +61,7 @@ public:
 ""));
         useredit = new QLineEdit(addnewcustomer);
         useredit->setObjectName("useredit");
-        useredit->setGeometry(QRect(70, 120, 260, 40));
+        useredit->setGeometry(QRect(70, 110, 260, 40));
         useredit->setStyleSheet(QString::fromUtf8("font-family: \"Open Sans\", sans-serif;\n"
 "    font-size: 16px;\n"
 "    letter-spacing: 2px;\n"
@@ -75,7 +76,7 @@ public:
 ""));
         password = new QLabel(addnewcustomer);
         password->setObjectName("password");
-        password->setGeometry(QRect(70, 180, 140, 30));
+        password->setGeometry(QRect(70, 170, 140, 30));
         password->setStyleSheet(QString::fromUtf8("font-family: \"Open Sans\", sans-serif;\n"
 "    font-size: 16px;\n"
 "    letter-spacing: 2px;\n"
@@ -85,8 +86,41 @@ public:
 ""));
         pushButton = new QPushButton(addnewcustomer);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(158, 300, 84, 30));
+        pushButton->setGeometry(QRect(80, 300, 84, 30));
+        pushButton->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
         pushButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    font-family: \"Open Sans\", sans-serif;\n"
+"    font-size: 16px;\n"
+"    letter-spacing: 2px;\n"
+"    text-decoration: none;\n"
+"    text-transform: uppercase;\n"
+"    color: #000;\n"
+"    border: 3px solid #000;   /* Solid border */\n"
+"    padding: 0.25em 0.5em;\n"
+"    border-radius: 15px 225px 255px 15px;  /* Custom border radius */\n"
+"    position: relative;\n"
+"    background-color: #fff;   /* White background for the button */\n"
+"    transition: all 0.3s ease; /* Smooth transition for hover effect */\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #e0e0e0;  /* Change background color on hover */\n"
+"    border: 3px solid #888;     /* Lighter border on hover */\n"
+"    transform: scale(1.05);      /* Slightly increase the size on hover */\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    border: 3px solid #333;  /* Darker border on press */\n"
+"    background-color: #f0f0f0;  /* Change background color when pressed */\n"
+"    top: 5px;\n"
+"    left: 5px;\n"
+"}\n"
+""));
+        pushButton_2 = new QPushButton(addnewcustomer);
+        pushButton_2->setObjectName("pushButton_2");
+        pushButton_2->setGeometry(QRect(230, 300, 84, 30));
+        pushButton_2->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
+        pushButton_2->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    font-family: \"Open Sans\", sans-serif;\n"
 "    font-size: 16px;\n"
 "    letter-spacing: 2px;\n"
@@ -126,6 +160,7 @@ public:
         username->setText(QCoreApplication::translate("addnewcustomer", "Username: ", nullptr));
         password->setText(QCoreApplication::translate("addnewcustomer", "password:", nullptr));
         pushButton->setText(QCoreApplication::translate("addnewcustomer", "ADD", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("addnewcustomer", "BACK", nullptr));
     } // retranslateUi
 
 };

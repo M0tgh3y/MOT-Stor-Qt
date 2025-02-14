@@ -1,5 +1,6 @@
 #include "addnewcustomer.h"
 #include "ui_addnewcustomer.h"
+#include "customerwindow.h"
 
 addnewcustomer::addnewcustomer(QWidget *parent)
     : QWidget(parent)
@@ -15,3 +16,11 @@ addnewcustomer::~addnewcustomer()
 {
     delete ui;
 }
+
+void addnewcustomer::on_pushButton_2_clicked()
+{
+    this->close();
+    CustomerWindow *customerWin = new CustomerWindow();
+    customerWin->show();
+}
+

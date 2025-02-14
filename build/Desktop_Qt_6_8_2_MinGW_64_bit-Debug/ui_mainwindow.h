@@ -44,6 +44,7 @@ public:
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(manager->sizePolicy().hasHeightForWidth());
         manager->setSizePolicy(sizePolicy);
+        manager->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
         manager->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    font-family: \"Open Sans\", sans-serif;\n"
 "    font-size: 16px;\n"
@@ -77,6 +78,7 @@ public:
         customer->setGeometry(QRect(45, 130, 180, 70));
         sizePolicy.setHeightForWidth(customer->sizePolicy().hasHeightForWidth());
         customer->setSizePolicy(sizePolicy);
+        customer->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
         customer->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    font-family: \"Open Sans\", sans-serif;\n"
 "    font-size: 16px;\n"
