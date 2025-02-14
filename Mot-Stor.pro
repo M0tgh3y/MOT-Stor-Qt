@@ -18,6 +18,7 @@ SOURCES += \
 HEADERS += \
     addnewcustomer.h \
     customerwindow.h \
+    global.h \
     mainwindow.h \
     managerwindow.h
 
