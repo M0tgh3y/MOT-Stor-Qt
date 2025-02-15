@@ -2,6 +2,7 @@
 #include "ui_customerwindow.h"
 #include "addnewcustomer.h"
 #include "mainwindow.h"
+#include "global.h"
 #include <QIcon>
 #include <QMessageBox>
 #include <vector>
@@ -27,15 +28,18 @@ CustomerWindow::~CustomerWindow()
     delete ui;
 }
 
-std::vector<QString> nameC = {"mot", "ghey"};
-std::vector<QString> passC = {"1383mot", "2004ghey"};
+addCname("mot");
+addCpass("1383mot");
+
+addCname("ghey");
+addCpass("2004ghey");
 
 void CustomerWindow::on_ok_clicked() {
     QString unameC = ui->useredit->text().trimmed();
     QString upassC = ui->passedit->text().trimmed();
 
-    for (size_t i = 0; i < nameC.size(); i++) {
-        if (unameC == nameC[i] && upassC == passC[i]) {
+    for (size_t i = 0; i < Cname.size(); i++) {
+        if (unameC.toStdString() == Cname[i] && upassC.toStdString() == Cpass[i]) {
             QMessageBox::information(this, "Welcome", "Welcome " + unameC);
             return;
         }
@@ -43,6 +47,7 @@ void CustomerWindow::on_ok_clicked() {
 
     QMessageBox::warning(this, "Error", "Invalid username or password");
 }
+
 
 void CustomerWindow::on_back_clicked()
 {

@@ -11,6 +11,7 @@ CONFIG += c++17
 SOURCES += \
     addnewcustomer.cpp \
     customerwindow.cpp \
+    global.cpp \
     main.cpp \
     mainwindow.cpp \
     managerwindow.cpp

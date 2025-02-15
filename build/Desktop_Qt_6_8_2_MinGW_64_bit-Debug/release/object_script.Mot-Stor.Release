@@ -1,5 +1,6 @@
 release/addnewcustomer.o
 release/customerwindow.o
+release/global.o
 release/main.o
 release/mainwindow.o
 release/managerwindow.o

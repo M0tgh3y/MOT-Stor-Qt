@@ -25,7 +25,7 @@ public:
     QLineEdit *passedit;
     QLineEdit *useredit;
     QLabel *password;
-    QPushButton *pushButton;
+    QPushButton *add;
     QPushButton *pushButton_2;
 
     void setupUi(QWidget *addnewcustomer)
@@ -84,11 +84,11 @@ public:
 "    text-transform: uppercase;\n"
 "    color: #000;\n"
 ""));
-        pushButton = new QPushButton(addnewcustomer);
-        pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(80, 300, 84, 30));
-        pushButton->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
-        pushButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        add = new QPushButton(addnewcustomer);
+        add->setObjectName("add");
+        add->setGeometry(QRect(80, 300, 84, 30));
+        add->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
+        add->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    font-family: \"Open Sans\", sans-serif;\n"
 "    font-size: 16px;\n"
 "    letter-spacing: 2px;\n"
@@ -159,7 +159,7 @@ public:
         addnewcustomer->setWindowTitle(QCoreApplication::translate("addnewcustomer", "Form", nullptr));
         username->setText(QCoreApplication::translate("addnewcustomer", "Username: ", nullptr));
         password->setText(QCoreApplication::translate("addnewcustomer", "password:", nullptr));
-        pushButton->setText(QCoreApplication::translate("addnewcustomer", "ADD", nullptr));
+        add->setText(QCoreApplication::translate("addnewcustomer", "ADD", nullptr));
         pushButton_2->setText(QCoreApplication::translate("addnewcustomer", "BACK", nullptr));
     } // retranslateUi
 

@@ -108,7 +108,7 @@ border: 3px solid #000;   /* Solid border */
     <string>password:</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="add">
    <property name="geometry">
     <rect>
      <x>80</x>
