@@ -2,14 +2,16 @@
 #define GLOBAL_H
 
 #include <vector>
-#include <string>
+#include <QString>
 
-extern std::vector<std::string> Cname;
-void addCname(const std::string& value);
-bool searchCname(const std::string& value);  // Search function for Cname
+extern std::vector<QString> Cname;
+void addCname(const QString& value);
+bool searchCname(const QString& value);
 
-extern std::vector<std::string> Cpass;
-void addCpass(const std::string& value);
-bool searchCpass(const std::string& value);  // Search function for Cpass
+extern std::vector<QString> Cpass;
+void addCpass(const QString& value);
+bool searchCpass(const QString& value);
+
+void initializeData();
 
 #endif // GLOBAL_H

@@ -28,12 +28,6 @@ CustomerWindow::~CustomerWindow()
     delete ui;
 }
 
-addCname("mot");
-addCpass("1383mot");
-
-addCname("ghey");
-addCpass("2004ghey");
-
 void CustomerWindow::on_ok_clicked() {
     QString unameC = ui->useredit->text().trimmed();
     QString upassC = ui->passedit->text().trimmed();

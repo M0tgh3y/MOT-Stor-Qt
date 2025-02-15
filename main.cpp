@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "global.h"
 
 #include <QApplication>
 #include <QLocale>
@@ -6,6 +7,8 @@
 
 int main(int argc, char *argv[])
 {
+    initializeData();
+
     QApplication a(argc, argv);
 
     QTranslator translator;
