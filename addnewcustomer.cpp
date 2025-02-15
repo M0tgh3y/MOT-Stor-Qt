@@ -12,6 +12,8 @@ addnewcustomer::addnewcustomer(QWidget *parent)
 
     setWindowTitle("Add New Customer");
     setWindowIcon(QIcon("C:/Users/Ariyana-Soft/Downloads/icons8-store-50.png"));
+
+    connect(ui->add, SIGNAL(clicked(bool)), this, SLOT(on_add_clicked()), Qt::UniqueConnection);
 }
 
 addnewcustomer::~addnewcustomer()
@@ -32,12 +34,14 @@ void addnewcustomer::on_add_clicked()
     QString unameC = ui->useredit->text().trimmed();
     QString upassC = ui->passedit->text().trimmed();
 
-    if (searchCname(unameC) == false) {
+    if (searchCname(unameC)) {
+        QMessageBox::information(this, "Error", "Your username is invalid");
+    } else {
         addCname(unameC);
         addCpass(upassC);
-        QMessageBox::information(this, "success", "Your account has been successfully created.");
-    } else if (searchCname(unameC) == true) {
-        QMessageBox::information(this, "Error", "Your username is invalid");
+
+        QMessageBox::information(this, "Success", "Your account has been successfully created.");
     }
 }
+
 
