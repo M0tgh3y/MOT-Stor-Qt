@@ -31,14 +31,14 @@ void addnewcustomer::on_pushButton_2_clicked()
 
 void addnewcustomer::on_add_clicked()
 {
-    QString unameC = ui->useredit->text().trimmed();
-    QString upassC = ui->passedit->text().trimmed();
+    QString unameC2 = ui->useredit2->text().trimmed();
+    QString upassC2 = ui->passedit2->text().trimmed();
 
-    if (searchCname(unameC)) {
+    if (searchCname(unameC2)) {
         QMessageBox::information(this, "Error", "Your username is invalid");
     } else {
-        addCname(unameC);
-        addCpass(upassC);
+        addCname(unameC2);
+        addCpass(upassC2);
 
         QMessageBox::information(this, "Success", "Your account has been successfully created.");
     }

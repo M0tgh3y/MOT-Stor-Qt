@@ -22,8 +22,8 @@ class Ui_addnewcustomer
 {
 public:
     QLabel *username;
-    QLineEdit *passedit;
-    QLineEdit *useredit;
+    QLineEdit *passedit2;
+    QLineEdit *useredit2;
     QLabel *password;
     QPushButton *add;
     QPushButton *pushButton_2;
@@ -44,10 +44,10 @@ public:
 "    text-transform: uppercase;\n"
 "    color: #000;\n"
 ""));
-        passedit = new QLineEdit(addnewcustomer);
-        passedit->setObjectName("passedit");
-        passedit->setGeometry(QRect(70, 210, 260, 40));
-        passedit->setStyleSheet(QString::fromUtf8("font-family: \"Open Sans\", sans-serif;\n"
+        passedit2 = new QLineEdit(addnewcustomer);
+        passedit2->setObjectName("passedit2");
+        passedit2->setGeometry(QRect(70, 210, 260, 40));
+        passedit2->setStyleSheet(QString::fromUtf8("font-family: \"Open Sans\", sans-serif;\n"
 "    font-size: 16px;\n"
 "    letter-spacing: 2px;\n"
 "    text-decoration: none;\n"
@@ -59,10 +59,10 @@ public:
 "    position: relative;\n"
 "    background-color: #fff;\n"
 ""));
-        useredit = new QLineEdit(addnewcustomer);
-        useredit->setObjectName("useredit");
-        useredit->setGeometry(QRect(70, 110, 260, 40));
-        useredit->setStyleSheet(QString::fromUtf8("font-family: \"Open Sans\", sans-serif;\n"
+        useredit2 = new QLineEdit(addnewcustomer);
+        useredit2->setObjectName("useredit2");
+        useredit2->setGeometry(QRect(70, 110, 260, 40));
+        useredit2->setStyleSheet(QString::fromUtf8("font-family: \"Open Sans\", sans-serif;\n"
 "    font-size: 16px;\n"
 "    letter-spacing: 2px;\n"
 "    text-decoration: none;\n"

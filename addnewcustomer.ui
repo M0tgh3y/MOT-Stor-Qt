@@ -38,7 +38,7 @@
     <string>Username: </string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="passedit">
+  <widget class="QLineEdit" name="passedit2">
    <property name="geometry">
     <rect>
      <x>70</x>
@@ -62,7 +62,7 @@ border: 3px solid #000;   /* Solid border */
 </string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="useredit">
+  <widget class="QLineEdit" name="useredit2">
    <property name="geometry">
     <rect>
      <x>70</x>
