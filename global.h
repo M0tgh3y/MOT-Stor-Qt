@@ -18,10 +18,9 @@ public:
 };
 
 class managerdata {
+public:
     QString usernameM;
     QString passwordM;
-    QString nameman;
-    QString lastnameman;
 };
 
 void addmanager (QString U, QString P);

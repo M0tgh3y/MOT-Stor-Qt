@@ -10,9 +10,13 @@ void customerdata::addcus() {
 }
 
 void addmanager(QString unameM, QString upassM){
-    managerdata manager1 = {unameM, upassM};
+    managerdata manager1;
+
+    manager1.passwordM = upassM;
+    manager1.passwordM = unameM;
 
     ofstream file("manager", ios::app | ios::binary);
+
     if (file.is_open()) {
         file.write((char*)&manager1, sizeof(managerdata));
         cout << "Manager details added successfully!" << endl;
