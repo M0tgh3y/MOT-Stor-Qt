@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <fstream>
 #include <iostream>
+#include <QMessageBox>
 using namespace std;
 
 void customerdata::addcus() {
@@ -19,9 +20,9 @@ void addmanager(QString unameM, QString upassM){
 
     if (file.is_open()) {
         file.write((char*)&manager1, sizeof(managerdata));
-        cout << "Manager details added successfully!" << endl;
+        QMessageBox::information(this, "WELCOME", "WELCOME!");
         file.close();
     } else {
-        cout << "Unable to open file" << endl;
+        QMessageBox::information(this, "ERROR", "ERROR!");
     }
 };
