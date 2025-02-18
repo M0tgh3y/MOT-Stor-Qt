@@ -1,5 +1,5 @@
 #include "global.h"
-#include "managerwindow.cpp"
+#include "managerwindow.h"
 #include <algorithm>
 #include <fstream>
 #include <iostream>
