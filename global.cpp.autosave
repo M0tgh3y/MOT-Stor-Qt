@@ -1,7 +1,0 @@
-#include "global.h"
-#include <algorithm>
-#include 
-
-void customerdata::addcus() {
-    ofstream file("customer", ios::app | ios::binary);
-}

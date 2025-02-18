@@ -3,15 +3,27 @@
 
 #include <vector>
 #include <QString>
+#include <fstream>
+#include <iostream>
 
-extern std::vector<QString> Cname;
-void addCname(const QString& value);
-bool searchCname(const QString& value);
+class customerdata {
+public:
+    QString usernameC;
+    QString passwordC;
+    QString namecus;
+    QString lastnamecus;
+    long long int balance;
 
-extern std::vector<QString> Cpass;
-void addCpass(const QString& value);
-bool searchCpass(const QString& value);
+    void addcus();
+};
 
-void initializeData();
+class managerdata {
+    QString usernameM;
+    QString passwordM;
+    QString nameman;
+    QString lastnameman;
+};
+
+void checkmanager (QString U, QString P);
 
 #endif // GLOBAL_H
