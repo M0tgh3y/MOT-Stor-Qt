@@ -25,14 +25,12 @@ ManagerWindow::~ManagerWindow()
     delete ui;
 }
 
-//***********************************
-QString unameM = Ui.useredit->text();
-QString upassM = Ui.passedit->text();
-//***********************************
+
 
 void ManagerWindow::on_ok_clicked()
 {
-
+    QString unameM = ui->useredit->text();
+    QString upassM = ui->passedit->text();
 }
 
 
