@@ -24,6 +24,6 @@ class managerdata {
     QString lastnameman;
 };
 
-void checkmanager (QString U, QString P);
+void addmanager (QString U, QString P);
 
 #endif // GLOBAL_H

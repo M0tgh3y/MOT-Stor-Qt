@@ -1,9 +1,23 @@
 #include "global.h"
+#include "managerwindow.cpp"
 #include <algorithm>
 #include <fstream>
 #include <iostream>
 using namespace std;
 
 void customerdata::addcus() {
-    ofstream file("customer", ios::app | ios::binary);
+    ofstream file("manager", ios::app | ios::binary);
 }
+
+void addmanager(unameM, upassM){
+    Manager manager1 = {unameM, upassM};
+
+    ofstream file("manager", ios::app | ios::binary);
+    if (file.is_open()) {
+        file.write((char*)&manager1, sizeof(manager));
+        cout << "Manager details added successfully!" << endl;
+        file.close();
+    } else {
+        cout << "Unable to open file" << endl;
+    }
+};

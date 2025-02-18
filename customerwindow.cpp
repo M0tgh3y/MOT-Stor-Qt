@@ -29,17 +29,7 @@ CustomerWindow::~CustomerWindow()
 }
 
 void CustomerWindow::on_ok_clicked() {
-    QString unameC = ui->useredit->text().trimmed();
-    QString upassC = ui->passedit->text().trimmed();
 
-    for (size_t i = 0; i < Cname.size(); i++) {
-        if (unameC.toStdString() == Cname[i] && upassC.toStdString() == Cpass[i]) {
-            QMessageBox::information(this, "Welcome", "Welcome " + unameC);
-            return;
-        }
-    }
-
-    QMessageBox::warning(this, "Error", "Invalid username or password");
 }
 
 

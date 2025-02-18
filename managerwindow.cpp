@@ -25,30 +25,14 @@ ManagerWindow::~ManagerWindow()
     delete ui;
 }
 
-std::vector<QString> nameM = {"mot", "ghey"};  // Vector of usernames
-std::vector<QString> passM = {"1383mot", "2004ghey"};  // Vector of passwords
+//***********************************
+QString unameM = Ui.useredit->text();
+QString upassM = Ui.passedit->text();
+//***********************************
 
 void ManagerWindow::on_ok_clicked()
 {
-    QString unameM = ui->useredit->text();  // Get username input
-    QString upassM = ui->passedit->text();  // Get password input
 
-    bool f = false;
-
-    // Loop through the vectors to find matching username and password
-    for (size_t i = 0; i < nameM.size(); i++) {
-        if (unameM == nameM[i] && upassM == passM[i]) {
-            QMessageBox::information(this, "Welcome", "Welcome " + unameM);
-            f = true;
-            return;
-        }
-    }
-
-    // If username or password is not found, show an error message
-    if (!f) {
-        QMessageBox::information(this, "Error", "Invalid username or password");
-        return;
-    }
 }
 
 
