@@ -32,8 +32,22 @@ void ManagerWindow::on_ok_clicked()
 {
     QString unameM = ui->useredit->text();
     QString upassM = ui->passedit->text();
-    addmanager(unameM, upassM);
 
+    QByteArray unameBytes = unameM.toUtf8();
+    QByteArray upassBytes = upassM.toUtf8();
+
+    char unameChar[100];
+    char passChar[100];
+
+    strncpy(unameChar, unameBytes.constData(), sizeof(unameChar) - 1);
+    unameChar[sizeof(unameChar) - 1] = '\0';
+
+    strncpy(passChar, upassBytes.constData(), sizeof(passChar) - 1);
+    passChar[sizeof(passChar) - 1] = '\0';
+
+
+    //checkmanager(unameM, upassM);
+    addmanager(unameChar, passChar);
 }
 
 

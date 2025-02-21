@@ -19,10 +19,12 @@ public:
 
 class managerdata {
 public:
-    QString usernameM;
-    QString passwordM;
+    char usernameM[100];
+    char passwordM[100];
 };
 
+
 void addmanager (QString U, QString P);
+void checkmanager(QString U, QString P);
 
 #endif // GLOBAL_H
