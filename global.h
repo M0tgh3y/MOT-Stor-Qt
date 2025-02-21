@@ -19,8 +19,8 @@ public:
 
 class managerdata {
 public:
-    char usernameM[100];
-    char passwordM[100];
+    QString usernameM;
+    QString passwordM;
 };
 
 
