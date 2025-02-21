@@ -21,8 +21,22 @@ void addmanager(QString unameM, QString upassM) {
         return;
     }
     QMessageBox::information(nullptr, "Error", "Error!");
+    file.close();
 }
 
 void checkmanager(QString unameM, QString upassM) {
     managerdata manager;
+
+    ifstream file("C:/Users/Ariyana-Soft/Desktop/Mot-Stor/Mot-Stor/build/Desktop_Qt_6_8_2_MinGW_64_bit-Debug/manager", ios::binary);
+    while(file.read((char*)&manager, sizeof(managerdata))) {
+        if(manager.usernameM == unameM && manager.passwordM == upassM) {
+            QMessageBox::information(nullptr, "welcom", "Welcome");
+            file.close();
+            return;
+        }
+        QMessageBox::information(nullptr, "Error", "ggggggggggggggggggggggg");
+    }
+
+    QMessageBox::information(nullptr, "Error", "Error!");
+    file.close();
 }
