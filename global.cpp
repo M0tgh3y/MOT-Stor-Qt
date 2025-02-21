@@ -20,9 +20,9 @@ void addmanager(QString unameM, QString upassM){
 
     if (file.is_open()) {
         file.write((char*)&manager1, sizeof(managerdata));
-        QMessageBox::information(this, "WELCOME", "WELCOME!");
+        QMessageBox::information(nullptr, "WELCOME", "WELCOME!");
         file.close();
     } else {
-        QMessageBox::information(this, "ERROR", "ERROR!");
+        QMessageBox::information(nullptr, "ERROR", "ERROR!");
     }
-};
+}

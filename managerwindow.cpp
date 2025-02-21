@@ -1,5 +1,6 @@
 #include "managerwindow.h"
 #include "ui_managerwindow.h"
+#include "global.h"
 #include "mainwindow.h"
 #include <QIcon>
 #include <QMessageBox>
@@ -31,6 +32,8 @@ void ManagerWindow::on_ok_clicked()
 {
     QString unameM = ui->useredit->text();
     QString upassM = ui->passedit->text();
+    addmanager(unameM, upassM);
+
 }
 
 
