@@ -34,7 +34,7 @@ void ManagerWindow::on_ok_clicked()
     QString upassM = ui->passedit->text();
 
 
-    addmanager(unameM, upassM);
+    //addmanager(unameM, upassM);
     checkmanager(unameM, upassM);
 }
 
