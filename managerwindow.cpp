@@ -5,6 +5,7 @@
 #include <QIcon>
 #include <QMessageBox>
 #include <vector>
+#include <cstring>
 
 ManagerWindow::ManagerWindow(QWidget *parent)
     : QWidget(parent),
@@ -33,9 +34,12 @@ void ManagerWindow::on_ok_clicked()
     QString unameM = ui->useredit->text();
     QString upassM = ui->passedit->text();
 
+    string U = unameM.toStdString();
+    string P = upassM.toStdString();
 
-    //addmanager(unameM, upassM);
-    checkmanager(unameM, upassM);
+
+    //addmanager(U, P);
+    checkmanager(U, P);
 }
 
 

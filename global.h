@@ -5,13 +5,16 @@
 #include <QString>
 #include <fstream>
 #include <iostream>
+#include <cstring>
+
+using namespace std;
 
 class customerdata {
 public:
-    QString usernameC;
-    QString passwordC;
-    QString namecus;
-    QString lastnamecus;
+    string usernameC;
+    string passwordC;
+    string namecus;
+    string lastnamecus;
     long long int balance;
 
     void addcus();
@@ -19,12 +22,12 @@ public:
 
 class managerdata {
 public:
-    QString usernameM;
-    QString passwordM;
+    string usernameM;
+    string passwordM;
 };
 
 
-void addmanager (QString U, QString P);
-void checkmanager(QString U, QString P);
+void addmanager (string U, string P);
+void checkmanager(string U, string P);
 
 #endif // GLOBAL_H
