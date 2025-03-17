@@ -42,8 +42,6 @@ void ManagerWindow::on_ok_clicked()
         managerdashboard *dashboard = new managerdashboard();
         dashboard->show();
         this->close();
-        //QMessageBox::information(this, "Login Success", "You have successfully logged in.");
-
     } else {
         QMessageBox::warning(this, "Login Failed", "Invalid username or password!");
     }

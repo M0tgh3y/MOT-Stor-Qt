@@ -7,12 +7,301 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>300</height>
+    <height>410</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(170, 170, 255)</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>75</x>
+     <y>30</y>
+     <width>250</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: &quot;Open Sans&quot;, sans-serif;
+font-size: 19px;
+letter-spacing: 2px;
+text-decoration: none;
+text-transform: uppercase;
+color: #000;
+border: 3px solid #000;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;</string>
+   </property>
+   <property name="text">
+    <string>MANAGER DASHBOARD</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="customer">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>110</y>
+     <width>300</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    font-family: &quot;Open Sans&quot;, sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    border: 3px solid #000;   /* Solid border */
+    padding: 0.25em 0.5em;
+    border-radius: 15px 225px 255px 15px;  /* Custom border radius */
+    position: relative;
+    background-color: #fff;   /* White background for the button */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+QPushButton:hover {
+    background-color: #e0e0e0;  /* Change background color on hover */
+    border: 3px solid #888;     /* Lighter border on hover */
+    transform: scale(1.05);      /* Slightly increase the size on hover */
+}
+
+QPushButton:pressed {
+    border: 3px solid #333;  /* Darker border on press */
+    background-color: #f0f0f0;  /* Change background color when pressed */
+    top: 5px;
+    left: 5px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Add new product</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="customer_2">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>170</y>
+     <width>300</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    font-family: &quot;Open Sans&quot;, sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    border: 3px solid #000;   /* Solid border */
+    padding: 0.25em 0.5em;
+    border-radius: 15px 225px 255px 15px;  /* Custom border radius */
+    position: relative;
+    background-color: #fff;   /* White background for the button */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+QPushButton:hover {
+    background-color: #e0e0e0;  /* Change background color on hover */
+    border: 3px solid #888;     /* Lighter border on hover */
+    transform: scale(1.05);      /* Slightly increase the size on hover */
+}
+
+QPushButton:pressed {
+    border: 3px solid #333;  /* Darker border on press */
+    background-color: #f0f0f0;  /* Change background color when pressed */
+    top: 5px;
+    left: 5px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Add new manager</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="customer_3">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>290</y>
+     <width>300</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    font-family: &quot;Open Sans&quot;, sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    border: 3px solid #000;   /* Solid border */
+    padding: 0.25em 0.5em;
+    border-radius: 15px 225px 255px 15px;  /* Custom border radius */
+    position: relative;
+    background-color: #fff;   /* White background for the button */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+QPushButton:hover {
+    background-color: #e0e0e0;  /* Change background color on hover */
+    border: 3px solid #888;     /* Lighter border on hover */
+    transform: scale(1.05);      /* Slightly increase the size on hover */
+}
+
+QPushButton:pressed {
+    border: 3px solid #333;  /* Darker border on press */
+    background-color: #f0f0f0;  /* Change background color when pressed */
+    top: 5px;
+    left: 5px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>show manager's</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="customer_4">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>230</y>
+     <width>300</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    font-family: &quot;Open Sans&quot;, sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    border: 3px solid #000;   /* Solid border */
+    padding: 0.25em 0.5em;
+    border-radius: 15px 225px 255px 15px;  /* Custom border radius */
+    position: relative;
+    background-color: #fff;   /* White background for the button */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+QPushButton:hover {
+    background-color: #e0e0e0;  /* Change background color on hover */
+    border: 3px solid #888;     /* Lighter border on hover */
+    transform: scale(1.05);      /* Slightly increase the size on hover */
+}
+
+QPushButton:pressed {
+    border: 3px solid #333;  /* Darker border on press */
+    background-color: #f0f0f0;  /* Change background color when pressed */
+    top: 5px;
+    left: 5px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>show produc's</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="customer_5">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>350</y>
+     <width>300</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    font-family: &quot;Open Sans&quot;, sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    border: 3px solid #000;   /* Solid border */
+    padding: 0.25em 0.5em;
+    border-radius: 15px 225px 255px 15px;  /* Custom border radius */
+    position: relative;
+    background-color: #fff;   /* White background for the button */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+QPushButton:hover {
+    background-color: #e0e0e0;  /* Change background color on hover */
+    border: 3px solid #888;     /* Lighter border on hover */
+    transform: scale(1.05);      /* Slightly increase the size on hover */
+}
+
+QPushButton:pressed {
+    border: 3px solid #333;  /* Darker border on press */
+    background-color: #f0f0f0;  /* Change background color when pressed */
+    top: 5px;
+    left: 5px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Increase the number of product's</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>

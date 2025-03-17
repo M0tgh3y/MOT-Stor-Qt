@@ -10,7 +10,7 @@ managerdashboard::managerdashboard(QWidget *parent)
     setWindowTitle("Manager Dashboard");
     setWindowIcon(QIcon("C:/Users/Ariyana-Soft/Downloads/icons8-store-50.png"));
 
-    resize(400, 400);
+    //resize(400, 400);
 }
 
 managerdashboard::~managerdashboard()
