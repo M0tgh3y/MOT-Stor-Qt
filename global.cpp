@@ -4,39 +4,49 @@
 #include <fstream>
 #include <cstring>
 #include <QDebug>
+#include <sstream>
 
 using namespace std;
 
+const string FILE_PATH = "C:/Users/Ariyana-Soft/Desktop/Mot-Stor/Mot-Stor/manager.csv";
+
 void addmanager(string unameM, string upassM) {
-    managerdata manager;
-
-    manager.usernameM = unameM;
-    manager.passwordM = upassM;
-
-    ofstream file("C:/Users/Ariyana-Soft/Desktop/Mot-Stor/Mot-Stor/manager", ios::app | ios::binary);
+    ofstream file(FILE_PATH, ios::app);
     if (file.is_open()) {
-        file.write((char*)&manager, sizeof(managerdata));
-        QMessageBox::information(nullptr, "success", "Welcome");
+        file << unameM << "," << upassM << "\n";  // Store username,password in CSV format
         file.close();
-        return;
+        QMessageBox::information(nullptr, "Success", "Manager Added Successfully");
+    } else {
+        QMessageBox::warning(nullptr, "Error", "Failed to Open File!");
     }
-    QMessageBox::information(nullptr, "Error", "Error!");
-    file.close();
 }
 
 void checkmanager(string unameM, string upassM) {
-    managerdata manager;
-
-    ifstream file("C:/Users/Ariyana-Soft/Desktop/Mot-Stor/Mot-Stor/manager", ios::app | ios::binary);
-    while(file.read((char*)&manager, sizeof(managerdata))) {
-        if(manager.usernameM == unameM && manager.passwordM == upassM) {
-            QMessageBox::information(nullptr, "welcom", "Welcome");
-            return;
-            file.close();
-        }
-        QMessageBox::information(nullptr, "Error", "ggggggggggggggggggggggg");
+    ifstream file(FILE_PATH);
+    if (!file.is_open()) {
+        QMessageBox::warning(nullptr, "Error", "Failed to Open File!");
+        return;
     }
 
-    QMessageBox::information(nullptr, "Error", "Error!");
+    string line, storedUname, storedPass;
+    bool found = false;
+
+    while (getline(file, line)) {
+        stringstream ss(line);
+        getline(ss, storedUname, ',');  // Read until comma
+        getline(ss, storedPass, '\n');  // Read until newline
+
+        if (unameM == storedUname && upassM == storedPass) {
+            found = true;
+            break;
+        }
+    }
+
     file.close();
+
+    if (found) {
+        QMessageBox::information(nullptr, "Welcome", "Login Successful");
+    } else {
+        QMessageBox::warning(nullptr, "Error", "Invalid Username or Password!");
+    }
 }
