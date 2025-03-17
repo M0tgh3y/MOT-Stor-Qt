@@ -28,6 +28,6 @@ public:
 
 
 void addmanager (string U, string P);
-void checkmanager(string U, string P);
+bool checkmanager(string U, string P);
 
 #endif // GLOBAL_H

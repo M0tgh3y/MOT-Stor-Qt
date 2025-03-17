@@ -21,32 +21,27 @@ void addmanager(string unameM, string upassM) {
     }
 }
 
-void checkmanager(string unameM, string upassM) {
+bool checkmanager(string unameM, string upassM) {
     ifstream file(FILE_PATH);
     if (!file.is_open()) {
         QMessageBox::warning(nullptr, "Error", "Failed to Open File!");
-        return;
+        return false;
     }
 
     string line, storedUname, storedPass;
-    bool found = false;
 
     while (getline(file, line)) {
         stringstream ss(line);
-        getline(ss, storedUname, ',');  // Read until comma
-        getline(ss, storedPass, '\n');  // Read until newline
+        getline(ss, storedUname, ',');
+        getline(ss, storedPass, '\n');
 
         if (unameM == storedUname && upassM == storedPass) {
-            found = true;
-            break;
+            file.close();
+            return true;  // Login successful
         }
     }
 
     file.close();
-
-    if (found) {
-        QMessageBox::information(nullptr, "Welcome", "Login Successful");
-    } else {
-        QMessageBox::warning(nullptr, "Error", "Invalid Username or Password!");
-    }
+    return false;  // Login failed
 }
+

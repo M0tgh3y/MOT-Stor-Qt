@@ -2,6 +2,7 @@
 #include "ui_managerwindow.h"
 #include "global.h"
 #include "mainwindow.h"
+#include "managerdashboard.h"
 #include <QIcon>
 #include <QMessageBox>
 #include <vector>
@@ -37,10 +38,17 @@ void ManagerWindow::on_ok_clicked()
     string U = unameM.toStdString();
     string P = upassM.toStdString();
 
+    if (checkmanager(U, P)) {
+        managerdashboard *dashboard = new managerdashboard();
+        dashboard->show();
+        this->close();
+        //QMessageBox::information(this, "Login Success", "You have successfully logged in.");
 
-    //addmanager(U, P);
-    checkmanager(U, P);
+    } else {
+        QMessageBox::warning(this, "Login Failed", "Invalid username or password!");
+    }
 }
+
 
 
 void ManagerWindow::on_back_clicked()

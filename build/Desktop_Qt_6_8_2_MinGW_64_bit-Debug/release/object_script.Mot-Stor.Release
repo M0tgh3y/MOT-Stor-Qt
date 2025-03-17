@@ -3,9 +3,11 @@ release/customerwindow.o
 release/global.o
 release/main.o
 release/mainwindow.o
+release/managerdashboard.o
 release/managerwindow.o
 release/qrc_qmake_qmake_qm_files.o
 release/moc_addnewcustomer.o
 release/moc_customerwindow.o
 release/moc_mainwindow.o
+release/moc_managerdashboard.o
 release/moc_managerwindow.o

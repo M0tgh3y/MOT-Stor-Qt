@@ -14,6 +14,7 @@ SOURCES += \
     global.cpp \
     main.cpp \
     mainwindow.cpp \
+    managerdashboard.cpp \
     managerwindow.cpp
 
 HEADERS += \
@@ -21,6 +22,7 @@ HEADERS += \
     customerwindow.h \
     global.h \
     mainwindow.h \
+    managerdashboard.h \
     managerwindow.h
 
 
@@ -28,6 +30,7 @@ FORMS += \
     addnewcustomer.ui \
     customerwindow.ui \
     mainwindow.ui \
+    managerdashboard.ui \
     managerwindow.ui
 
 TRANSLATIONS += \
