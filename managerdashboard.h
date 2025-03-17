@@ -15,6 +15,9 @@ public:
     explicit managerdashboard(QWidget *parent = nullptr);
     ~managerdashboard();
 
+private slots:
+    void on_back_clicked();
+
 private:
     Ui::managerdashboard *ui;
 };

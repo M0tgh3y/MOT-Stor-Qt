@@ -1,5 +1,6 @@
 #include "managerdashboard.h"
 #include "ui_managerdashboard.h"
+#include "mainwindow.h"
 
 managerdashboard::managerdashboard(QWidget *parent)
     : QWidget(parent)
@@ -17,3 +18,12 @@ managerdashboard::~managerdashboard()
 {
     delete ui;
 }
+
+void managerdashboard::on_back_clicked()
+{
+    this->close();
+
+    MainWindow *mainWindow = new MainWindow();
+    mainWindow->show();
+}
+

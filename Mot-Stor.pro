@@ -10,6 +10,7 @@ CONFIG += c++17
 
 SOURCES += \
     addnewcustomer.cpp \
+    customerdashboard.cpp \
     customerwindow.cpp \
     global.cpp \
     main.cpp \
@@ -19,6 +20,7 @@ SOURCES += \
 
 HEADERS += \
     addnewcustomer.h \
+    customerdashboard.h \
     customerwindow.h \
     global.h \
     mainwindow.h \
@@ -28,6 +30,7 @@ HEADERS += \
 
 FORMS += \
     addnewcustomer.ui \
+    customerdashboard.ui \
     customerwindow.ui \
     mainwindow.ui \
     managerdashboard.ui \

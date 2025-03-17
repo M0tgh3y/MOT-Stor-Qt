@@ -8,11 +8,11 @@
 
 using namespace std;
 
-const string FILE_PATH = "C:/Users/Ariyana-Soft/Desktop/Mot-Stor/Mot-Stor/manager.csv";
+const string FILE_PATH_1 = "C:/Users/Ariyana-Soft/Desktop/Mot-Stor/Mot-Stor/manager.csv";
 const string FILE_PATH_2 = "C:/Users/Ariyana-Soft/Desktop/Mot-Stor/Mot-Stor/customer.csv";
 
 void addmanager(string unameM, string upassM) {
-    ofstream file(FILE_PATH, ios::app);
+    ofstream file(FILE_PATH_1, ios::app);
     if (file.is_open()) {
         file << unameM << "," << upassM << "\n";
         file.close();
@@ -23,7 +23,7 @@ void addmanager(string unameM, string upassM) {
 }
 
 bool checkmanager(string unameM, string upassM) {
-    ifstream file(FILE_PATH);
+    ifstream file(FILE_PATH_1);
     if (!file.is_open()) {
         QMessageBox::warning(nullptr, "Error", "Failed to Open File!");
         return false;
@@ -38,7 +38,7 @@ bool checkmanager(string unameM, string upassM) {
 
         if (unameM == storedUname && upassM == storedPass) {
             file.close();
-            return true;  // Login successful
+            return true;
         }
     }
 
@@ -47,6 +47,26 @@ bool checkmanager(string unameM, string upassM) {
 }
 
 void addNewCustomer(string unamecus, string passcus, string name, string lastname) {
+    ifstream infile(FILE_PATH_2);
+    string line;
+    bool exists = false;
+
+    while (getline(infile, line)) {
+        stringstream ss(line);
+        string existingUname;
+        getline(ss, existingUname, ',');
+
+        if (existingUname == unamecus) {
+            exists = true;
+            break;
+        }
+    }
+    infile.close();
+
+    if (exists) {
+        QMessageBox::warning(nullptr, "Error", "Customer already exists!");
+        return;
+    }
 
     ofstream file(FILE_PATH_2, ios::app);
     long long int mojoody = 0;
