@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>400</width>
-    <height>400</height>
+    <height>420</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,7 +20,7 @@
    <property name="geometry">
     <rect>
      <x>70</x>
-     <y>70</y>
+     <y>20</y>
      <width>140</width>
      <height>30</height>
     </rect>
@@ -38,11 +38,11 @@
     <string>Username: </string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="passedit2">
+  <widget class="QLineEdit" name="passedit">
    <property name="geometry">
     <rect>
      <x>70</x>
-     <y>210</y>
+     <y>135</y>
      <width>260</width>
      <height>40</height>
     </rect>
@@ -62,11 +62,11 @@ border: 3px solid #000;   /* Solid border */
 </string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="useredit2">
+  <widget class="QLineEdit" name="useredit">
    <property name="geometry">
     <rect>
      <x>70</x>
-     <y>110</y>
+     <y>55</y>
      <width>260</width>
      <height>40</height>
     </rect>
@@ -90,7 +90,7 @@ border: 3px solid #000;   /* Solid border */
    <property name="geometry">
     <rect>
      <x>70</x>
-     <y>170</y>
+     <y>105</y>
      <width>140</width>
      <height>30</height>
     </rect>
@@ -112,7 +112,7 @@ border: 3px solid #000;   /* Solid border */
    <property name="geometry">
     <rect>
      <x>80</x>
-     <y>300</y>
+     <y>360</y>
      <width>84</width>
      <height>30</height>
     </rect>
@@ -154,11 +154,11 @@ QPushButton:pressed {
     <string>ADD</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="back">
    <property name="geometry">
     <rect>
      <x>230</x>
-     <y>300</y>
+     <y>360</y>
      <width>84</width>
      <height>30</height>
     </rect>
@@ -198,6 +198,98 @@ QPushButton:pressed {
    </property>
    <property name="text">
     <string>BACK</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="firstname">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>185</y>
+     <width>140</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: &quot;Open Sans&quot;, sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+</string>
+   </property>
+   <property name="text">
+    <string>first name:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="firstnameedit">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>215</y>
+     <width>260</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: &quot;Open Sans&quot;, sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #000;
+
+border: 3px solid #000;   /* Solid border */
+    padding: 0.25em 0.5em;
+    border-radius: 15px 225px 255px 15px;  /* Custom border radius */
+    position: relative;
+    background-color: #fff;
+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lastname">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>265</y>
+     <width>140</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: &quot;Open Sans&quot;, sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+</string>
+   </property>
+   <property name="text">
+    <string>last name:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lastnameedit">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>295</y>
+     <width>260</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: &quot;Open Sans&quot;, sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #000;
+
+border: 3px solid #000;   /* Solid border */
+    padding: 0.25em 0.5em;
+    border-radius: 15px 225px 255px 15px;  /* Custom border radius */
+    position: relative;
+    background-color: #fff;
+</string>
    </property>
   </widget>
  </widget>

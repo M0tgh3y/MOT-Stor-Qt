@@ -38,7 +38,7 @@ struct qt_meta_tag_ZN14addnewcustomerE_t {};
 #ifdef QT_MOC_HAS_STRINGDATA
 static constexpr auto qt_meta_stringdata_ZN14addnewcustomerE = QtMocHelpers::stringData(
     "addnewcustomer",
-    "on_pushButton_2_clicked",
+    "on_back_clicked",
     "",
     "on_pushButton_clicked",
     "on_add_clicked"
@@ -82,7 +82,7 @@ Q_CONSTINIT const QMetaObject addnewcustomer::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_tag_ZN14addnewcustomerE_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<addnewcustomer, std::true_type>,
-        // method 'on_pushButton_2_clicked'
+        // method 'on_back_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_pushButton_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
@@ -97,7 +97,7 @@ void addnewcustomer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
     auto *_t = static_cast<addnewcustomer *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->on_pushButton_2_clicked(); break;
+        case 0: _t->on_back_clicked(); break;
         case 1: _t->on_add_clicked(); break;
         default: ;
         }

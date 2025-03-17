@@ -20,23 +20,23 @@ QT_BEGIN_NAMESPACE
 class Ui_managerdashboard
 {
 public:
-    QLabel *label;
-    QPushButton *customer;
-    QPushButton *customer_2;
-    QPushButton *customer_3;
-    QPushButton *customer_4;
-    QPushButton *customer_5;
+    QLabel *mandash;
+    QPushButton *addNPro;
+    QPushButton *addNMan;
+    QPushButton *showMan;
+    QPushButton *showPro;
+    QPushButton *incrasePro;
 
     void setupUi(QWidget *managerdashboard)
     {
         if (managerdashboard->objectName().isEmpty())
             managerdashboard->setObjectName("managerdashboard");
-        managerdashboard->resize(400, 410);
+        managerdashboard->resize(400, 415);
         managerdashboard->setStyleSheet(QString::fromUtf8("background-color: rgb(170, 170, 255)"));
-        label = new QLabel(managerdashboard);
-        label->setObjectName("label");
-        label->setGeometry(QRect(75, 30, 250, 40));
-        label->setStyleSheet(QString::fromUtf8("font-family: \"Open Sans\", sans-serif;\n"
+        mandash = new QLabel(managerdashboard);
+        mandash->setObjectName("mandash");
+        mandash->setGeometry(QRect(75, 30, 250, 40));
+        mandash->setStyleSheet(QString::fromUtf8("font-family: \"Open Sans\", sans-serif;\n"
 "font-size: 19px;\n"
 "letter-spacing: 2px;\n"
 "text-decoration: none;\n"
@@ -47,16 +47,16 @@ public:
 "display: flex;\n"
 "justify-content: center;\n"
 "align-items: center;"));
-        customer = new QPushButton(managerdashboard);
-        customer->setObjectName("customer");
-        customer->setGeometry(QRect(50, 110, 300, 40));
+        addNPro = new QPushButton(managerdashboard);
+        addNPro->setObjectName("addNPro");
+        addNPro->setGeometry(QRect(50, 100, 300, 40));
         QSizePolicy sizePolicy(QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Maximum);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(customer->sizePolicy().hasHeightForWidth());
-        customer->setSizePolicy(sizePolicy);
-        customer->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
-        customer->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        sizePolicy.setHeightForWidth(addNPro->sizePolicy().hasHeightForWidth());
+        addNPro->setSizePolicy(sizePolicy);
+        addNPro->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
+        addNPro->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    font-family: \"Open Sans\", sans-serif;\n"
 "    font-size: 16px;\n"
 "    letter-spacing: 2px;\n"
@@ -84,13 +84,13 @@ public:
 "    left: 5px;\n"
 "}\n"
 ""));
-        customer_2 = new QPushButton(managerdashboard);
-        customer_2->setObjectName("customer_2");
-        customer_2->setGeometry(QRect(50, 170, 300, 40));
-        sizePolicy.setHeightForWidth(customer_2->sizePolicy().hasHeightForWidth());
-        customer_2->setSizePolicy(sizePolicy);
-        customer_2->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
-        customer_2->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        addNMan = new QPushButton(managerdashboard);
+        addNMan->setObjectName("addNMan");
+        addNMan->setGeometry(QRect(50, 160, 300, 40));
+        sizePolicy.setHeightForWidth(addNMan->sizePolicy().hasHeightForWidth());
+        addNMan->setSizePolicy(sizePolicy);
+        addNMan->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
+        addNMan->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    font-family: \"Open Sans\", sans-serif;\n"
 "    font-size: 16px;\n"
 "    letter-spacing: 2px;\n"
@@ -118,13 +118,13 @@ public:
 "    left: 5px;\n"
 "}\n"
 ""));
-        customer_3 = new QPushButton(managerdashboard);
-        customer_3->setObjectName("customer_3");
-        customer_3->setGeometry(QRect(50, 290, 300, 40));
-        sizePolicy.setHeightForWidth(customer_3->sizePolicy().hasHeightForWidth());
-        customer_3->setSizePolicy(sizePolicy);
-        customer_3->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
-        customer_3->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        showMan = new QPushButton(managerdashboard);
+        showMan->setObjectName("showMan");
+        showMan->setGeometry(QRect(50, 280, 300, 40));
+        sizePolicy.setHeightForWidth(showMan->sizePolicy().hasHeightForWidth());
+        showMan->setSizePolicy(sizePolicy);
+        showMan->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
+        showMan->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    font-family: \"Open Sans\", sans-serif;\n"
 "    font-size: 16px;\n"
 "    letter-spacing: 2px;\n"
@@ -152,13 +152,13 @@ public:
 "    left: 5px;\n"
 "}\n"
 ""));
-        customer_4 = new QPushButton(managerdashboard);
-        customer_4->setObjectName("customer_4");
-        customer_4->setGeometry(QRect(50, 230, 300, 40));
-        sizePolicy.setHeightForWidth(customer_4->sizePolicy().hasHeightForWidth());
-        customer_4->setSizePolicy(sizePolicy);
-        customer_4->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
-        customer_4->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        showPro = new QPushButton(managerdashboard);
+        showPro->setObjectName("showPro");
+        showPro->setGeometry(QRect(50, 220, 300, 40));
+        sizePolicy.setHeightForWidth(showPro->sizePolicy().hasHeightForWidth());
+        showPro->setSizePolicy(sizePolicy);
+        showPro->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
+        showPro->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    font-family: \"Open Sans\", sans-serif;\n"
 "    font-size: 16px;\n"
 "    letter-spacing: 2px;\n"
@@ -186,13 +186,13 @@ public:
 "    left: 5px;\n"
 "}\n"
 ""));
-        customer_5 = new QPushButton(managerdashboard);
-        customer_5->setObjectName("customer_5");
-        customer_5->setGeometry(QRect(50, 350, 300, 40));
-        sizePolicy.setHeightForWidth(customer_5->sizePolicy().hasHeightForWidth());
-        customer_5->setSizePolicy(sizePolicy);
-        customer_5->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
-        customer_5->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        incrasePro = new QPushButton(managerdashboard);
+        incrasePro->setObjectName("incrasePro");
+        incrasePro->setGeometry(QRect(50, 340, 300, 40));
+        sizePolicy.setHeightForWidth(incrasePro->sizePolicy().hasHeightForWidth());
+        incrasePro->setSizePolicy(sizePolicy);
+        incrasePro->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
+        incrasePro->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    font-family: \"Open Sans\", sans-serif;\n"
 "    font-size: 11px;\n"
 "    letter-spacing: 2px;\n"
@@ -229,12 +229,12 @@ public:
     void retranslateUi(QWidget *managerdashboard)
     {
         managerdashboard->setWindowTitle(QCoreApplication::translate("managerdashboard", "Form", nullptr));
-        label->setText(QCoreApplication::translate("managerdashboard", "MANAGER DASHBOARD", nullptr));
-        customer->setText(QCoreApplication::translate("managerdashboard", "Add new product", nullptr));
-        customer_2->setText(QCoreApplication::translate("managerdashboard", "Add new manager", nullptr));
-        customer_3->setText(QCoreApplication::translate("managerdashboard", "show manager's", nullptr));
-        customer_4->setText(QCoreApplication::translate("managerdashboard", "show produc's", nullptr));
-        customer_5->setText(QCoreApplication::translate("managerdashboard", "Increase the number of product's", nullptr));
+        mandash->setText(QCoreApplication::translate("managerdashboard", "MANAGER DASHBOARD", nullptr));
+        addNPro->setText(QCoreApplication::translate("managerdashboard", "Add new product", nullptr));
+        addNMan->setText(QCoreApplication::translate("managerdashboard", "Add new manager", nullptr));
+        showMan->setText(QCoreApplication::translate("managerdashboard", "show manager's", nullptr));
+        showPro->setText(QCoreApplication::translate("managerdashboard", "show produc's", nullptr));
+        incrasePro->setText(QCoreApplication::translate("managerdashboard", "Increase the number of product's", nullptr));
     } // retranslateUi
 
 };

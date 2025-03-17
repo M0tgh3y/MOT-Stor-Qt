@@ -30,6 +30,21 @@ CustomerWindow::~CustomerWindow()
 
 void CustomerWindow::on_ok_clicked() {
 
+    QString unamec = ui->useredit->text();
+    QString upassc = ui->passedit->text();
+
+    string U = unamec.toStdString();
+    string P = upassc.toStdString();
+
+    if (checkCustomer(U, P)) {
+        /*managerdashboard *dashboard = new managerdashboard();
+        dashboard->show();
+        this->close();*/
+        QMessageBox::information(this, "Login Successful", "You have successfully logged in.");
+
+    } else {
+        QMessageBox::warning(this, "Login Failed", "Invalid username or password!");
+    }
 }
 
 

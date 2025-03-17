@@ -16,8 +16,6 @@ public:
     string namecus;
     string lastnamecus;
     long long int balance;
-
-    void addcus();
 };
 
 class managerdata {
@@ -29,5 +27,7 @@ public:
 
 void addmanager (string U, string P);
 bool checkmanager(string U, string P);
+void addNewCustomer(string U, string P, string name, string lastname);
+bool checkCustomer(string U, string P);
 
 #endif // GLOBAL_H

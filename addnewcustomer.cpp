@@ -13,7 +13,7 @@ addnewcustomer::addnewcustomer(QWidget *parent)
     setWindowTitle("Add New Customer");
     setWindowIcon(QIcon("C:/Users/Ariyana-Soft/Downloads/icons8-store-50.png"));
 
-    connect(ui->add, SIGNAL(clicked(bool)), this, SLOT(on_add_clicked()), Qt::UniqueConnection);
+    connect(ui->add, &QPushButton::clicked, this, &addnewcustomer::on_add_clicked);
 }
 
 addnewcustomer::~addnewcustomer()
@@ -21,7 +21,7 @@ addnewcustomer::~addnewcustomer()
     delete ui;
 }
 
-void addnewcustomer::on_pushButton_2_clicked()
+void addnewcustomer::on_back_clicked()
 {
     this->close();
     CustomerWindow *customerWin = new CustomerWindow();
@@ -31,7 +31,17 @@ void addnewcustomer::on_pushButton_2_clicked()
 
 void addnewcustomer::on_add_clicked()
 {
+    QString unamecus = ui->useredit->text();
+    QString passcus = ui->passedit->text();
+    QString fname = ui->firstnameedit->text();
+    QString lastnamec = ui->lastnameedit->text();
 
+    string U = unamecus.toStdString();
+    string P = passcus.toStdString();
+    string name = fname.toStdString();
+    string lastname = lastnamec.toStdString();
+
+    addNewCustomer(U, P, name, lastname);
 }
 
 

@@ -22,21 +22,25 @@ class Ui_addnewcustomer
 {
 public:
     QLabel *username;
-    QLineEdit *passedit2;
-    QLineEdit *useredit2;
+    QLineEdit *passedit;
+    QLineEdit *useredit;
     QLabel *password;
     QPushButton *add;
-    QPushButton *pushButton_2;
+    QPushButton *back;
+    QLabel *firstname;
+    QLineEdit *firstnameedit;
+    QLabel *lastname;
+    QLineEdit *lastnameedit;
 
     void setupUi(QWidget *addnewcustomer)
     {
         if (addnewcustomer->objectName().isEmpty())
             addnewcustomer->setObjectName("addnewcustomer");
-        addnewcustomer->resize(400, 400);
+        addnewcustomer->resize(400, 420);
         addnewcustomer->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 170, 127);"));
         username = new QLabel(addnewcustomer);
         username->setObjectName("username");
-        username->setGeometry(QRect(70, 70, 140, 30));
+        username->setGeometry(QRect(70, 20, 140, 30));
         username->setStyleSheet(QString::fromUtf8("font-family: \"Open Sans\", sans-serif;\n"
 "    font-size: 16px;\n"
 "    letter-spacing: 2px;\n"
@@ -44,10 +48,10 @@ public:
 "    text-transform: uppercase;\n"
 "    color: #000;\n"
 ""));
-        passedit2 = new QLineEdit(addnewcustomer);
-        passedit2->setObjectName("passedit2");
-        passedit2->setGeometry(QRect(70, 210, 260, 40));
-        passedit2->setStyleSheet(QString::fromUtf8("font-family: \"Open Sans\", sans-serif;\n"
+        passedit = new QLineEdit(addnewcustomer);
+        passedit->setObjectName("passedit");
+        passedit->setGeometry(QRect(70, 135, 260, 40));
+        passedit->setStyleSheet(QString::fromUtf8("font-family: \"Open Sans\", sans-serif;\n"
 "    font-size: 16px;\n"
 "    letter-spacing: 2px;\n"
 "    text-decoration: none;\n"
@@ -59,10 +63,10 @@ public:
 "    position: relative;\n"
 "    background-color: #fff;\n"
 ""));
-        useredit2 = new QLineEdit(addnewcustomer);
-        useredit2->setObjectName("useredit2");
-        useredit2->setGeometry(QRect(70, 110, 260, 40));
-        useredit2->setStyleSheet(QString::fromUtf8("font-family: \"Open Sans\", sans-serif;\n"
+        useredit = new QLineEdit(addnewcustomer);
+        useredit->setObjectName("useredit");
+        useredit->setGeometry(QRect(70, 55, 260, 40));
+        useredit->setStyleSheet(QString::fromUtf8("font-family: \"Open Sans\", sans-serif;\n"
 "    font-size: 16px;\n"
 "    letter-spacing: 2px;\n"
 "    text-decoration: none;\n"
@@ -76,7 +80,7 @@ public:
 ""));
         password = new QLabel(addnewcustomer);
         password->setObjectName("password");
-        password->setGeometry(QRect(70, 170, 140, 30));
+        password->setGeometry(QRect(70, 105, 140, 30));
         password->setStyleSheet(QString::fromUtf8("font-family: \"Open Sans\", sans-serif;\n"
 "    font-size: 16px;\n"
 "    letter-spacing: 2px;\n"
@@ -86,7 +90,7 @@ public:
 ""));
         add = new QPushButton(addnewcustomer);
         add->setObjectName("add");
-        add->setGeometry(QRect(80, 300, 84, 30));
+        add->setGeometry(QRect(80, 360, 84, 30));
         add->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
         add->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    font-family: \"Open Sans\", sans-serif;\n"
@@ -116,11 +120,11 @@ public:
 "    left: 5px;\n"
 "}\n"
 ""));
-        pushButton_2 = new QPushButton(addnewcustomer);
-        pushButton_2->setObjectName("pushButton_2");
-        pushButton_2->setGeometry(QRect(230, 300, 84, 30));
-        pushButton_2->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
-        pushButton_2->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        back = new QPushButton(addnewcustomer);
+        back->setObjectName("back");
+        back->setGeometry(QRect(230, 360, 84, 30));
+        back->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
+        back->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    font-family: \"Open Sans\", sans-serif;\n"
 "    font-size: 16px;\n"
 "    letter-spacing: 2px;\n"
@@ -148,6 +152,56 @@ public:
 "    left: 5px;\n"
 "}\n"
 ""));
+        firstname = new QLabel(addnewcustomer);
+        firstname->setObjectName("firstname");
+        firstname->setGeometry(QRect(70, 185, 140, 30));
+        firstname->setStyleSheet(QString::fromUtf8("font-family: \"Open Sans\", sans-serif;\n"
+"    font-size: 16px;\n"
+"    letter-spacing: 2px;\n"
+"    text-decoration: none;\n"
+"    text-transform: uppercase;\n"
+"    color: #000;\n"
+""));
+        firstnameedit = new QLineEdit(addnewcustomer);
+        firstnameedit->setObjectName("firstnameedit");
+        firstnameedit->setGeometry(QRect(70, 215, 260, 40));
+        firstnameedit->setStyleSheet(QString::fromUtf8("font-family: \"Open Sans\", sans-serif;\n"
+"    font-size: 16px;\n"
+"    letter-spacing: 2px;\n"
+"    text-decoration: none;\n"
+"    color: #000;\n"
+"\n"
+"border: 3px solid #000;   /* Solid border */\n"
+"    padding: 0.25em 0.5em;\n"
+"    border-radius: 15px 225px 255px 15px;  /* Custom border radius */\n"
+"    position: relative;\n"
+"    background-color: #fff;\n"
+""));
+        lastname = new QLabel(addnewcustomer);
+        lastname->setObjectName("lastname");
+        lastname->setGeometry(QRect(70, 265, 140, 30));
+        lastname->setStyleSheet(QString::fromUtf8("font-family: \"Open Sans\", sans-serif;\n"
+"    font-size: 16px;\n"
+"    letter-spacing: 2px;\n"
+"    text-decoration: none;\n"
+"    text-transform: uppercase;\n"
+"    color: #000;\n"
+""));
+        lastnameedit = new QLineEdit(addnewcustomer);
+        lastnameedit->setObjectName("lastnameedit");
+        lastnameedit->setGeometry(QRect(70, 295, 260, 40));
+        lastnameedit->setStyleSheet(QString::fromUtf8("font-family: \"Open Sans\", sans-serif;\n"
+"    font-size: 16px;\n"
+"    letter-spacing: 2px;\n"
+"    text-decoration: none;\n"
+"    color: #000;\n"
+"\n"
+"border: 3px solid #000;   /* Solid border */\n"
+"    padding: 0.25em 0.5em;\n"
+"    border-radius: 15px 225px 255px 15px;  /* Custom border radius */\n"
+"    position: relative;\n"
+"    background-color: #fff;\n"
+""));
 
         retranslateUi(addnewcustomer);
 
@@ -160,7 +214,9 @@ public:
         username->setText(QCoreApplication::translate("addnewcustomer", "Username: ", nullptr));
         password->setText(QCoreApplication::translate("addnewcustomer", "password:", nullptr));
         add->setText(QCoreApplication::translate("addnewcustomer", "ADD", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("addnewcustomer", "BACK", nullptr));
+        back->setText(QCoreApplication::translate("addnewcustomer", "BACK", nullptr));
+        firstname->setText(QCoreApplication::translate("addnewcustomer", "first name:", nullptr));
+        lastname->setText(QCoreApplication::translate("addnewcustomer", "last name:", nullptr));
     } // retranslateUi
 
 };
