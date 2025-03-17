@@ -15,6 +15,9 @@ public:
     explicit customerdashboard(QWidget *parent = nullptr);
     ~customerdashboard();
 
+private slots:
+    void on_back_clicked();
+
 private:
     Ui::customerdashboard *ui;
 };

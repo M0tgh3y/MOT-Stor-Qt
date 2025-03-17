@@ -10,6 +10,7 @@ using namespace std;
 
 const string FILE_PATH_1 = "C:/Users/Ariyana-Soft/Desktop/Mot-Stor/Mot-Stor/manager.csv";
 const string FILE_PATH_2 = "C:/Users/Ariyana-Soft/Desktop/Mot-Stor/Mot-Stor/customer.csv";
+const string FILE_PATH_3 = "C:/Users/Ariyana-Soft/Desktop/Mot-Stor/Mot-Stor/product.csv";
 
 void addmanager(string unameM, string upassM) {
     ofstream file(FILE_PATH_1, ios::app);
@@ -104,3 +105,34 @@ bool checkCustomer(string U, string P) {
     return false;
 }
 
+void addNewProduct(string name, int number, long long int price) {
+    ifstream infile(FILE_PATH_3);
+    string line;
+    bool exists = false;
+
+    while (getline(infile, line)) {
+        stringstream ss(line);
+        string existingName;
+        getline(ss, existingName, ',');
+
+        if (existingName == name) {
+            exists = true;
+            break;
+        }
+    }
+    infile.close();
+
+    if (exists) {
+        QMessageBox::warning(nullptr, "Error", "Product already exists!");
+        return;
+    }
+
+    ofstream file(FILE_PATH_3, ios::app);
+    if (file.is_open()) {
+        file << name << "," << number << "," << price << "\n";
+        file.close();
+        QMessageBox::information(nullptr, "Success", "Product Added Successfully");
+    } else {
+        QMessageBox::warning(nullptr, "Error", "Failed to Open File!");
+    }
+}

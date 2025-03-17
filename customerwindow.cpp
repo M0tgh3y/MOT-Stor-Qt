@@ -3,6 +3,7 @@
 #include "addnewcustomer.h"
 #include "mainwindow.h"
 #include "global.h"
+#include "customerdashboard.h"
 #include <QIcon>
 #include <QMessageBox>
 #include <vector>
@@ -37,10 +38,10 @@ void CustomerWindow::on_ok_clicked() {
     string P = upassc.toStdString();
 
     if (checkCustomer(U, P)) {
-        /*managerdashboard *dashboard = new managerdashboard();
+        customerdashboard *dashboard = new customerdashboard();
         dashboard->show();
-        this->close();*/
-        QMessageBox::information(this, "Login Successful", "You have successfully logged in.");
+        this->close();
+        //QMessageBox::information(this, "Login Successful", "You have successfully logged in.");
 
     } else {
         QMessageBox::warning(this, "Login Failed", "Invalid username or password!");

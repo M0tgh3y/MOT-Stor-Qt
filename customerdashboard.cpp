@@ -1,5 +1,6 @@
 #include "customerdashboard.h"
 #include "ui_customerdashboard.h"
+#include "mainwindow.h"
 
 customerdashboard::customerdashboard(QWidget *parent)
     : QWidget(parent)
@@ -15,3 +16,12 @@ customerdashboard::~customerdashboard()
 {
     delete ui;
 }
+
+void customerdashboard::on_back_clicked()
+{
+    this->close();
+
+    MainWindow *mainWindow = new MainWindow();
+    mainWindow->show();
+}
+
