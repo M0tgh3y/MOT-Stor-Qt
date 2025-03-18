@@ -1,4 +1,5 @@
 debug/addnewcustomer.o
+debug/addnewproduct.o
 debug/customerdashboard.o
 debug/customerwindow.o
 debug/global.o
@@ -8,6 +9,7 @@ debug/managerdashboard.o
 debug/managerwindow.o
 debug/qrc_qmake_qmake_qm_files.o
 debug/moc_addnewcustomer.o
+debug/moc_addnewproduct.o
 debug/moc_customerdashboard.o
 debug/moc_customerwindow.o
 debug/moc_mainwindow.o
