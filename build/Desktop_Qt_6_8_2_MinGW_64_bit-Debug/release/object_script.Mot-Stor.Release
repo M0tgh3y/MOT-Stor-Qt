@@ -1,4 +1,5 @@
 release/addnewcustomer.o
+release/addnewmanager.o
 release/addnewproduct.o
 release/customerdashboard.o
 release/customerwindow.o
@@ -9,6 +10,7 @@ release/managerdashboard.o
 release/managerwindow.o
 release/qrc_qmake_qmake_qm_files.o
 release/moc_addnewcustomer.o
+release/moc_addnewmanager.o
 release/moc_addnewproduct.o
 release/moc_customerdashboard.o
 release/moc_customerwindow.o

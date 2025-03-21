@@ -2,6 +2,7 @@
 #include "ui_managerdashboard.h"
 #include "mainwindow.h"
 #include "addnewproduct.h"
+#include "addnewmanager.h"
 
 managerdashboard::managerdashboard(QWidget *parent)
     : QWidget(parent)
@@ -35,5 +36,14 @@ void managerdashboard::on_addNPro_clicked()
 
     addnewproduct *addnewproductWindow = new addnewproduct();
     addnewproductWindow->show();
+}
+
+
+void managerdashboard::on_addNMan_clicked()
+{
+    this->close();
+
+    addnewmanager *addnewmanWindow = new addnewmanager();
+    addnewmanWindow->show();
 }
 

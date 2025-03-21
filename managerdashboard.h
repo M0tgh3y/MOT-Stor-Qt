@@ -20,6 +20,8 @@ private slots:
 
     void on_addNPro_clicked();
 
+    void on_addNMan_clicked();
+
 private:
     Ui::managerdashboard *ui;
 };
