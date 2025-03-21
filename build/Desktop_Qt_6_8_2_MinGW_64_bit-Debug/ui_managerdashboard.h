@@ -268,7 +268,7 @@ public:
         addNPro->setText(QCoreApplication::translate("managerdashboard", "Add new product", nullptr));
         addNMan->setText(QCoreApplication::translate("managerdashboard", "Add new manager", nullptr));
         showMan->setText(QCoreApplication::translate("managerdashboard", "show manager's", nullptr));
-        showPro->setText(QCoreApplication::translate("managerdashboard", "show produc's", nullptr));
+        showPro->setText(QCoreApplication::translate("managerdashboard", "show product's", nullptr));
         incrasePro->setText(QCoreApplication::translate("managerdashboard", "Increase the number of product's", nullptr));
         back->setText(QCoreApplication::translate("managerdashboard", "back", nullptr));
     } // retranslateUi
