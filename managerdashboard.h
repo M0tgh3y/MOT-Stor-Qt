@@ -22,6 +22,8 @@ private slots:
 
     void on_addNMan_clicked();
 
+    void on_showPro_clicked();
+
 private:
     Ui::managerdashboard *ui;
 };

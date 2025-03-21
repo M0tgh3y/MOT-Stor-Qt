@@ -8,6 +8,7 @@ release/main.o
 release/mainwindow.o
 release/managerdashboard.o
 release/managerwindow.o
+release/showproduct.o
 release/qrc_qmake_qmake_qm_files.o
 release/moc_addnewcustomer.o
 release/moc_addnewmanager.o
@@ -17,3 +18,4 @@ release/moc_customerwindow.o
 release/moc_mainwindow.o
 release/moc_managerdashboard.o
 release/moc_managerwindow.o
+release/moc_showproduct.o

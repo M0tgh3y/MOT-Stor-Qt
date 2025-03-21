@@ -18,7 +18,8 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     managerdashboard.cpp \
-    managerwindow.cpp
+    managerwindow.cpp \
+    showproduct.cpp
 
 HEADERS += \
     addnewcustomer.h \
@@ -29,7 +30,8 @@ HEADERS += \
     global.h \
     mainwindow.h \
     managerdashboard.h \
-    managerwindow.h
+    managerwindow.h \
+    showproduct.h
 
 
 FORMS += \
@@ -40,7 +42,8 @@ FORMS += \
     customerwindow.ui \
     mainwindow.ui \
     managerdashboard.ui \
-    managerwindow.ui
+    managerwindow.ui \
+    showproduct.ui
 
 TRANSLATIONS += \
     Mot-Stor_en_US.ts

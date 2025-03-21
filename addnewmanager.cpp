@@ -9,7 +9,7 @@ addnewmanager::addnewmanager(QWidget *parent)
 {
     ui->setupUi(this);
 
-    setWindowTitle("Manager Dashboard");
+    setWindowTitle("Add a Manager");
     setWindowIcon(QIcon("C:/Users/Ariyana-Soft/Downloads/icons8-store-50.png"));
 }
 
