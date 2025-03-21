@@ -30,14 +30,17 @@ void addnewproduct::on_cancel_clicked()
 void addnewproduct::on_add_clicked()
 {
     QString name = ui->nameedit->text();
-    int number = ui->numberedit->text().toInt();
-    int price = ui->priceedit->text().toInt();
+    QString number = ui->numberedit->text();
+    QString price = ui->priceedit->text();
 
     string n = name.toStdString();
-    //int num = number.toInt();
-    //int prc = price.toInt();
+    string num = number.toStdString();
+    string prc = price.toStdString();
 
-    //addnewproduct(n, number, price);
+    int nn = stoi(num);
+    int pp = stoi(prc);
+
+    addNewProductM(n, nn, pp);
 }
 
 

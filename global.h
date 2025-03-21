@@ -36,6 +36,6 @@ void addmanager (string U, string P);
 bool checkmanager(string U, string P);
 void addNewCustomer(string U, string P, string name, string lastname);
 bool checkCustomer(string U, string P);
-void addNewProduct(std::string name, int number, int price);
+void addNewProductM(string name, int number, int price);
 
 #endif // GLOBAL_H

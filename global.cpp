@@ -105,7 +105,7 @@ bool checkCustomer(string U, string P) {
     return false;
 }
 
-void addNewProduct(std::string name, int number, int price) {
+void addNewProductM(string name, int number, int price) {
     ifstream infile(FILE_PATH_3);
     string line;
     bool exists = false;
