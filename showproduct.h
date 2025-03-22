@@ -15,6 +15,9 @@ public:
     explicit showproduct(QWidget *parent = nullptr);
     ~showproduct();
 
+private slots:
+    void on_back_clicked();
+
 private:
     Ui::showproduct *ui;
     void loadCSV(const QString &product);

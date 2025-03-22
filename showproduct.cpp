@@ -1,6 +1,7 @@
 #include "showproduct.h"
 #include "ui_showproduct.h"
 #include "global.h"
+#include "managerdashboard.h"
 
 #include <QFile>
 #include <QTextStream>
@@ -48,3 +49,11 @@ void showproduct::loadCSV(const QString &filename)
 
     file.close();
 }
+
+void showproduct::on_back_clicked()
+{
+    managerdashboard *dashboard = new managerdashboard();
+    dashboard->show();
+    this->close();
+}
+
