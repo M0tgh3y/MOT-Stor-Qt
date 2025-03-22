@@ -229,9 +229,9 @@ QPushButton:pressed {
   <widget class="QPushButton" name="cancel">
    <property name="geometry">
     <rect>
-     <x>218</x>
+     <x>236</x>
      <y>380</y>
-     <width>96</width>
+     <width>84</width>
      <height>30</height>
     </rect>
    </property>
@@ -269,7 +269,7 @@ QPushButton:pressed {
 </string>
    </property>
    <property name="text">
-    <string>cancel</string>
+    <string>back</string>
    </property>
   </widget>
  </widget>

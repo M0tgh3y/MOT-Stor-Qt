@@ -160,7 +160,7 @@ public:
 ""));
         cancel = new QPushButton(addnewproduct);
         cancel->setObjectName("cancel");
-        cancel->setGeometry(QRect(218, 380, 96, 30));
+        cancel->setGeometry(QRect(236, 380, 84, 30));
         cancel->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
         cancel->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    font-family: \"Open Sans\", sans-serif;\n"
@@ -204,7 +204,7 @@ public:
         number->setText(QCoreApplication::translate("addnewproduct", "number:", nullptr));
         price->setText(QCoreApplication::translate("addnewproduct", "price:", nullptr));
         add->setText(QCoreApplication::translate("addnewproduct", "ADD", nullptr));
-        cancel->setText(QCoreApplication::translate("addnewproduct", "cancel", nullptr));
+        cancel->setText(QCoreApplication::translate("addnewproduct", "back", nullptr));
     } // retranslateUi
 
 };
