@@ -17,6 +17,12 @@ showproduct::showproduct(QWidget *parent)
     setWindowIcon(QIcon("C:/Users/Ariyana-Soft/Downloads/icons8-store-50.png"));
 
     loadCSV("C:/Users/Ariyana-Soft/Desktop/Mot-Stor/Mot-Stor/product.csv");
+
+    ui->tableWidget->setColumnWidth(0, 115);
+    ui->tableWidget->setColumnWidth(1, 60);
+    ui->tableWidget->setColumnWidth(2, 75);
+    ui->tableWidget->verticalHeader()->setVisible(false);
+    ui->tableWidget->horizontalHeader()->setVisible(false);
 }
 
 showproduct::~showproduct()
@@ -28,7 +34,7 @@ void showproduct::loadCSV(const QString &filename)
 {
     QFile file(filename);
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
-        return; // Handle error if the file can't be opened
+        return;
     }
 
     QTextStream in(&file);
@@ -38,8 +44,8 @@ void showproduct::loadCSV(const QString &filename)
         QString line = in.readLine();
         QStringList cells = line.split(',');
 
-        ui->tableWidget->insertRow(row);  // Add a new row
-        ui->tableWidget->setColumnCount(cells.size()); // Adjust columns dynamically
+        ui->tableWidget->insertRow(row);
+        ui->tableWidget->setColumnCount(cells.size());
 
         for (int col = 0; col < cells.size(); ++col) {
             ui->tableWidget->setItem(row, col, new QTableWidgetItem(cells[col]));

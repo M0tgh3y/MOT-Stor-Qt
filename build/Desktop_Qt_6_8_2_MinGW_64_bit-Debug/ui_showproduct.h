@@ -33,10 +33,19 @@ public:
         tableWidget = new QTableWidget(showproduct);
         tableWidget->setObjectName("tableWidget");
         tableWidget->setGeometry(QRect(65, 35, 270, 270));
-        tableWidget->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0)"));
+        tableWidget->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+" font-family: \"Open Sans\", sans-serif;\n"
+"    font-size: 12px;\n"
+"    letter-spacing: 1px;\n"
+"    text-decoration: none;\n"
+"    text-transform: uppercase;\n"
+"    color: #000;\n"
+"border-radius: 15px;\n"
+"border: 3px solid #000; \n"
+"padding-top: 15 px;"));
         back = new QPushButton(showproduct);
         back->setObjectName("back");
-        back->setGeometry(QRect(160, 330, 80, 35));
+        back->setGeometry(QRect(160, 340, 80, 35));
         QSizePolicy sizePolicy(QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Maximum);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
