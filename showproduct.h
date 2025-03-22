@@ -17,6 +17,7 @@ public:
 
 private:
     Ui::showproduct *ui;
+    void loadCSV(const QString &product);
 };
 
 #endif // SHOWPRODUCT_H

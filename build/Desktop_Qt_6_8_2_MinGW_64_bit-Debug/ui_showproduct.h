@@ -11,6 +11,8 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QTableWidget>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -18,12 +20,18 @@ QT_BEGIN_NAMESPACE
 class Ui_showproduct
 {
 public:
+    QTableWidget *tableWidget;
 
     void setupUi(QWidget *showproduct)
     {
         if (showproduct->objectName().isEmpty())
             showproduct->setObjectName("showproduct");
-        showproduct->resize(400, 300);
+        showproduct->resize(400, 400);
+        showproduct->setStyleSheet(QString::fromUtf8("background-color: rgb(170, 170, 255)"));
+        tableWidget = new QTableWidget(showproduct);
+        tableWidget->setObjectName("tableWidget");
+        tableWidget->setGeometry(QRect(75, 75, 250, 250));
+        tableWidget->setStyleSheet(QString::fromUtf8("background-color: rgb(166, 162, 153)"));
 
         retranslateUi(showproduct);
 
