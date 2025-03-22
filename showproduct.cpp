@@ -18,9 +18,9 @@ showproduct::showproduct(QWidget *parent)
 
     loadCSV("C:/Users/Ariyana-Soft/Desktop/Mot-Stor/Mot-Stor/product.csv");
 
-    ui->tableWidget->setColumnWidth(0, 115);
-    ui->tableWidget->setColumnWidth(1, 60);
-    ui->tableWidget->setColumnWidth(2, 75);
+    ui->tableWidget->setColumnWidth(0, 120);
+    ui->tableWidget->setColumnWidth(1, 65);
+    ui->tableWidget->setColumnWidth(2, 80);
     ui->tableWidget->verticalHeader()->setVisible(false);
     ui->tableWidget->horizontalHeader()->setVisible(false);
 }
