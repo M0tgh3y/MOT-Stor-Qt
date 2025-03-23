@@ -16,14 +16,27 @@ showproduct::showproduct(QWidget *parent)
     setWindowTitle("Show product's List");
     setWindowIcon(QIcon("C:/Users/Ariyana-Soft/Downloads/icons8-store-50.png"));
 
-    loadCSV("C:/Users/Ariyana-Soft/Desktop/Mot-Stor/Mot-Stor/product.csv");
+    ui->tableWidget->setColumnCount(3);
+    QStringList headers = {"Name", "Number", "Price"};
+    ui->tableWidget->setHorizontalHeaderLabels(headers);
 
-    ui->tableWidget->setColumnWidth(0, 120);
-    ui->tableWidget->setColumnWidth(1, 65);
-    ui->tableWidget->setColumnWidth(2, 80);
+    ui->tableWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+
+    ui->tableWidget->horizontalHeader()->setStyleSheet(
+        "QHeaderView::section {"
+        "    background-color: rgb(255, 255, 255);"
+        "    color: black;"
+        "    font-size: 12px;"
+        "    padding: 5px;"
+        "    border: none;"
+        "}"
+        );
+
     ui->tableWidget->verticalHeader()->setVisible(false);
-    ui->tableWidget->horizontalHeader()->setVisible(false);
+
+    loadCSV("C:/Users/Ariyana-Soft/Desktop/Mot-Stor/Mot-Stor/product.csv");
 }
+
 
 showproduct::~showproduct()
 {

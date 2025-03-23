@@ -41,8 +41,7 @@ public:
 "    text-transform: uppercase;\n"
 "    color: #000;\n"
 "border-radius: 15px;\n"
-"border: 3px solid #000; \n"
-"padding-top: 15 px;"));
+"border: 3px solid #000; "));
         back = new QPushButton(showproduct);
         back->setObjectName("back");
         back->setGeometry(QRect(160, 340, 80, 35));
