@@ -40,7 +40,6 @@ public:
 "    text-decoration: none;\n"
 "    text-transform: uppercase;\n"
 "    color: #000;\n"
-"border-radius: 15px;\n"
 "border: 3px solid #000; "));
         back = new QPushButton(showproduct);
         back->setObjectName("back");
