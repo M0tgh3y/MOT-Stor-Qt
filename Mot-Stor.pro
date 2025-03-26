@@ -19,6 +19,7 @@ SOURCES += \
     mainwindow.cpp \
     managerdashboard.cpp \
     managerwindow.cpp \
+    showmanager.cpp \
     showproduct.cpp
 
 HEADERS += \
@@ -31,6 +32,7 @@ HEADERS += \
     mainwindow.h \
     managerdashboard.h \
     managerwindow.h \
+    showmanager.h \
     showproduct.h
 
 
@@ -43,6 +45,7 @@ FORMS += \
     mainwindow.ui \
     managerdashboard.ui \
     managerwindow.ui \
+    showmanager.ui \
     showproduct.ui
 
 TRANSLATIONS += \

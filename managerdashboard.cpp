@@ -4,6 +4,7 @@
 #include "addnewproduct.h"
 #include "addnewmanager.h"
 #include "showproduct.h"
+#include "showmanager.h"
 
 managerdashboard::managerdashboard(QWidget *parent)
     : QWidget(parent)
@@ -49,6 +50,14 @@ void managerdashboard::on_addNMan_clicked()
 void managerdashboard::on_showPro_clicked()
 {
     showproduct *showWindow = new showproduct();
+    showWindow->show();
+    this->close();
+}
+
+
+void managerdashboard::on_showMan_clicked()
+{
+    showmanager *showWindow = new showmanager();
     showWindow->show();
     this->close();
 }

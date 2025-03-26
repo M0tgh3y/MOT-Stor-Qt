@@ -24,6 +24,8 @@ private slots:
 
     void on_showPro_clicked();
 
+    void on_showMan_clicked();
+
 private:
     Ui::managerdashboard *ui;
 };
