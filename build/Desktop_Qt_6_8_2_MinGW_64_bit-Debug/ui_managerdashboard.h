@@ -32,11 +32,11 @@ public:
     {
         if (managerdashboard->objectName().isEmpty())
             managerdashboard->setObjectName("managerdashboard");
-        managerdashboard->resize(400, 460);
+        managerdashboard->resize(700, 550);
         managerdashboard->setStyleSheet(QString::fromUtf8("background-color: rgb(170, 170, 255)"));
         mandash = new QLabel(managerdashboard);
         mandash->setObjectName("mandash");
-        mandash->setGeometry(QRect(75, 40, 250, 40));
+        mandash->setGeometry(QRect(225, 25, 250, 40));
         mandash->setStyleSheet(QString::fromUtf8("font-family: \"Open Sans\", sans-serif;\n"
 "font-size: 19px;\n"
 "letter-spacing: 2px;\n"
@@ -50,7 +50,7 @@ public:
 "align-items: center;"));
         addNPro = new QPushButton(managerdashboard);
         addNPro->setObjectName("addNPro");
-        addNPro->setGeometry(QRect(50, 110, 300, 40));
+        addNPro->setGeometry(QRect(365, 90, 220, 100));
         QSizePolicy sizePolicy(QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Maximum);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -87,7 +87,7 @@ public:
 ""));
         addNMan = new QPushButton(managerdashboard);
         addNMan->setObjectName("addNMan");
-        addNMan->setGeometry(QRect(50, 170, 300, 40));
+        addNMan->setGeometry(QRect(365, 210, 220, 100));
         sizePolicy.setHeightForWidth(addNMan->sizePolicy().hasHeightForWidth());
         addNMan->setSizePolicy(sizePolicy);
         addNMan->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
@@ -121,7 +121,7 @@ public:
 ""));
         showMan = new QPushButton(managerdashboard);
         showMan->setObjectName("showMan");
-        showMan->setGeometry(QRect(50, 290, 300, 40));
+        showMan->setGeometry(QRect(115, 210, 220, 100));
         sizePolicy.setHeightForWidth(showMan->sizePolicy().hasHeightForWidth());
         showMan->setSizePolicy(sizePolicy);
         showMan->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
@@ -155,7 +155,7 @@ public:
 ""));
         showPro = new QPushButton(managerdashboard);
         showPro->setObjectName("showPro");
-        showPro->setGeometry(QRect(50, 230, 300, 40));
+        showPro->setGeometry(QRect(115, 90, 220, 100));
         sizePolicy.setHeightForWidth(showPro->sizePolicy().hasHeightForWidth());
         showPro->setSizePolicy(sizePolicy);
         showPro->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
@@ -189,7 +189,7 @@ public:
 ""));
         incrasePro = new QPushButton(managerdashboard);
         incrasePro->setObjectName("incrasePro");
-        incrasePro->setGeometry(QRect(50, 350, 300, 40));
+        incrasePro->setGeometry(QRect(115, 330, 220, 100));
         sizePolicy.setHeightForWidth(incrasePro->sizePolicy().hasHeightForWidth());
         incrasePro->setSizePolicy(sizePolicy);
         incrasePro->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
@@ -201,29 +201,34 @@ public:
 "    text-transform: uppercase;\n"
 "    color: #000;\n"
 "    border: 3px solid #000;   /* Solid border */\n"
-"    padding: 0.25em 0.5em;\n"
+"    padding: 5px 10px;  /* Adjust padding for better text alignment */\n"
 "    border-radius: 15px 225px 255px 15px;  /* Custom border radius */\n"
 "    position: relative;\n"
 "    background-color: #fff;   /* White background for the button */\n"
 "    transition: all 0.3s ease; /* Smooth transition for hover effect */\n"
+"    text-align: center; /* Center text */\n"
+"    min-width: 60px; /* Ensure wrapping */\n"
 "}\n"
 "\n"
+"/* Hover effect */\n"
 "QPushButton:hover {\n"
 "    background-color: #e0e0e0;  /* Change background color on hover */\n"
 "    border: 3px solid #888;     /* Lighter border on hover */\n"
 "    transform: scale(1.05);      /* Slightly increase the size on hover */\n"
 "}\n"
 "\n"
+"/* Pressed effect */\n"
 "QPushButton:pressed {\n"
-"    border: 3px solid #333;  /* Darker border on press */\n"
+"    bor"
+                        "der: 3px solid #333;  /* Darker border on press */\n"
 "    background-color: #f0f0f0;  /* Change background color when pressed */\n"
-"    top: 5px;\n"
-"    left: 5px;\n"
+"    top: 2px;  /* Reduce movement */\n"
+"    left: 2px;\n"
 "}\n"
 ""));
         back = new QPushButton(managerdashboard);
         back->setObjectName("back");
-        back->setGeometry(QRect(160, 410, 80, 35));
+        back->setGeometry(QRect(310, 480, 80, 35));
         sizePolicy.setHeightForWidth(back->sizePolicy().hasHeightForWidth());
         back->setSizePolicy(sizePolicy);
         back->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
