@@ -301,7 +301,7 @@ public:
         customerdashboard->setWindowTitle(QCoreApplication::translate("customerdashboard", "Form", nullptr));
         addNMan->setText(QCoreApplication::translate("customerdashboard", "buy", nullptr));
         addNPro->setText(QCoreApplication::translate("customerdashboard", "my profile", nullptr));
-        showMan->setText(QCoreApplication::translate("customerdashboard", "View past purchases", nullptr));
+        showMan->setText(QCoreApplication::translate("customerdashboard", "past purchases", nullptr));
         showPro->setText(QCoreApplication::translate("customerdashboard", "show produc's", nullptr));
         mandash->setText(QCoreApplication::translate("customerdashboard", "customer DASHBOARD", nullptr));
         incrasePro->setText(QString());

@@ -169,7 +169,7 @@ QPushButton:pressed {
 </string>
    </property>
    <property name="text">
-    <string>View past purchases</string>
+    <string>past purchases</string>
    </property>
   </widget>
   <widget class="QPushButton" name="showPro">
