@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
@@ -25,6 +26,7 @@ public:
     QWidget *centralwidget;
     QPushButton *manager;
     QPushButton *customer;
+    QLabel *label;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -107,6 +109,10 @@ public:
 "    left: 5px;\n"
 "}\n"
 ""));
+        label = new QLabel(centralwidget);
+        label->setObjectName("label");
+        label->setGeometry(QRect(120, 150, 200, 200));
+        label->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 85, 255)"));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -126,6 +132,7 @@ public:
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         manager->setText(QCoreApplication::translate("MainWindow", "maneger", nullptr));
         customer->setText(QCoreApplication::translate("MainWindow", "customer", nullptr));
+        label->setText(QString());
     } // retranslateUi
 
 };
