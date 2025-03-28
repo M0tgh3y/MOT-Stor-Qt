@@ -27,6 +27,7 @@ public:
     QPushButton *showPro;
     QPushButton *incrasePro;
     QPushButton *back;
+    QPushButton *incrasePro_2;
 
     void setupUi(QWidget *managerdashboard)
     {
@@ -50,7 +51,7 @@ public:
 "align-items: center;"));
         addNPro = new QPushButton(managerdashboard);
         addNPro->setObjectName("addNPro");
-        addNPro->setGeometry(QRect(365, 90, 220, 100));
+        addNPro->setGeometry(QRect(115, 210, 220, 100));
         QSizePolicy sizePolicy(QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Maximum);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -121,7 +122,7 @@ public:
 ""));
         showMan = new QPushButton(managerdashboard);
         showMan->setObjectName("showMan");
-        showMan->setGeometry(QRect(115, 210, 220, 100));
+        showMan->setGeometry(QRect(365, 90, 220, 100));
         sizePolicy.setHeightForWidth(showMan->sizePolicy().hasHeightForWidth());
         showMan->setSizePolicy(sizePolicy);
         showMan->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
@@ -195,7 +196,7 @@ public:
         incrasePro->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
         incrasePro->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    font-family: \"Open Sans\", sans-serif;\n"
-"    font-size: 11px;\n"
+"    font-size: 16px;\n"
 "    letter-spacing: 2px;\n"
 "    text-decoration: none;\n"
 "    text-transform: uppercase;\n"
@@ -260,6 +261,45 @@ public:
 "    left: 5px;\n"
 "}\n"
 ""));
+        incrasePro_2 = new QPushButton(managerdashboard);
+        incrasePro_2->setObjectName("incrasePro_2");
+        incrasePro_2->setGeometry(QRect(365, 330, 220, 100));
+        sizePolicy.setHeightForWidth(incrasePro_2->sizePolicy().hasHeightForWidth());
+        incrasePro_2->setSizePolicy(sizePolicy);
+        incrasePro_2->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
+        incrasePro_2->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    font-family: \"Open Sans\", sans-serif;\n"
+"    font-size: 16px;\n"
+"    letter-spacing: 2px;\n"
+"    text-decoration: none;\n"
+"    text-transform: uppercase;\n"
+"    color: #000;\n"
+"    border: 3px solid #000;   /* Solid border */\n"
+"    padding: 5px 10px;  /* Adjust padding for better text alignment */\n"
+"    border-radius: 15px 225px 255px 15px;  /* Custom border radius */\n"
+"    position: relative;\n"
+"    background-color: #fff;   /* White background for the button */\n"
+"    transition: all 0.3s ease; /* Smooth transition for hover effect */\n"
+"    text-align: center; /* Center text */\n"
+"    min-width: 60px; /* Ensure wrapping */\n"
+"}\n"
+"\n"
+"/* Hover effect */\n"
+"QPushButton:hover {\n"
+"    background-color: #e0e0e0;  /* Change background color on hover */\n"
+"    border: 3px solid #888;     /* Lighter border on hover */\n"
+"    transform: scale(1.05);      /* Slightly increase the size on hover */\n"
+"}\n"
+"\n"
+"/* Pressed effect */\n"
+"QPushButton:pressed {\n"
+"    bor"
+                        "der: 3px solid #333;  /* Darker border on press */\n"
+"    background-color: #f0f0f0;  /* Change background color when pressed */\n"
+"    top: 2px;  /* Reduce movement */\n"
+"    left: 2px;\n"
+"}\n"
+""));
 
         retranslateUi(managerdashboard);
 
@@ -274,8 +314,9 @@ public:
         addNMan->setText(QCoreApplication::translate("managerdashboard", "Add new manager", nullptr));
         showMan->setText(QCoreApplication::translate("managerdashboard", "show manager's", nullptr));
         showPro->setText(QCoreApplication::translate("managerdashboard", "show product's", nullptr));
-        incrasePro->setText(QCoreApplication::translate("managerdashboard", "Increase the number of product's", nullptr));
+        incrasePro->setText(QCoreApplication::translate("managerdashboard", "EDIT product", nullptr));
         back->setText(QCoreApplication::translate("managerdashboard", "back", nullptr));
+        incrasePro_2->setText(QCoreApplication::translate("managerdashboard", "edit manager", nullptr));
     } // retranslateUi
 
 };

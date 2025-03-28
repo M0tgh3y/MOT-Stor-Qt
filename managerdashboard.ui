@@ -45,8 +45,8 @@ align-items: center;</string>
   <widget class="QPushButton" name="addNPro">
    <property name="geometry">
     <rect>
-     <x>365</x>
-     <y>90</y>
+     <x>115</x>
+     <y>210</y>
      <width>220</width>
      <height>100</height>
     </rect>
@@ -149,8 +149,8 @@ QPushButton:pressed {
   <widget class="QPushButton" name="showMan">
    <property name="geometry">
     <rect>
-     <x>115</x>
-     <y>210</y>
+     <x>365</x>
+     <y>90</y>
      <width>220</width>
      <height>100</height>
     </rect>
@@ -271,7 +271,7 @@ QPushButton:pressed {
    <property name="styleSheet">
     <string notr="true">QPushButton {
     font-family: &quot;Open Sans&quot;, sans-serif;
-    font-size: 11px;
+    font-size: 16px;
     letter-spacing: 2px;
     text-decoration: none;
     text-transform: uppercase;
@@ -303,7 +303,7 @@ QPushButton:pressed {
 </string>
    </property>
    <property name="text">
-    <string>Increase the number of product's</string>
+    <string>EDIT product</string>
    </property>
   </widget>
   <widget class="QPushButton" name="back">
@@ -356,6 +356,62 @@ QPushButton:pressed {
    </property>
    <property name="text">
     <string>back</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="incrasePro_2">
+   <property name="geometry">
+    <rect>
+     <x>365</x>
+     <y>330</y>
+     <width>220</width>
+     <height>100</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    font-family: &quot;Open Sans&quot;, sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    border: 3px solid #000;   /* Solid border */
+    padding: 5px 10px;  /* Adjust padding for better text alignment */
+    border-radius: 15px 225px 255px 15px;  /* Custom border radius */
+    position: relative;
+    background-color: #fff;   /* White background for the button */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    text-align: center; /* Center text */
+    min-width: 60px; /* Ensure wrapping */
+}
+
+/* Hover effect */
+QPushButton:hover {
+    background-color: #e0e0e0;  /* Change background color on hover */
+    border: 3px solid #888;     /* Lighter border on hover */
+    transform: scale(1.05);      /* Slightly increase the size on hover */
+}
+
+/* Pressed effect */
+QPushButton:pressed {
+    border: 3px solid #333;  /* Darker border on press */
+    background-color: #f0f0f0;  /* Change background color when pressed */
+    top: 2px;  /* Reduce movement */
+    left: 2px;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>edit manager</string>
    </property>
   </widget>
  </widget>
