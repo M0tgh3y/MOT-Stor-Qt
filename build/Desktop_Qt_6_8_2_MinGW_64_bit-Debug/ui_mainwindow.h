@@ -111,11 +111,11 @@ public:
 ""));
         label = new QLabel(centralwidget);
         label->setObjectName("label");
-        label->setGeometry(QRect(120, 140, 200, 200));
+        label->setGeometry(QRect(120, 130, 200, 200));
         label->setAutoFillBackground(false);
         label->setStyleSheet(QString::fromUtf8(""));
         label->setPixmap(QPixmap(QString::fromUtf8("../../../Downloads/InShot_20250329_211340704 (1).png")));
-        label->setScaledContents(true);
+        label->setScaledContents(false);
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
