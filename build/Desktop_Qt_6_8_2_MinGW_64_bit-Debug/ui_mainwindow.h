@@ -111,7 +111,7 @@ public:
 ""));
         label = new QLabel(centralwidget);
         label->setObjectName("label");
-        label->setGeometry(QRect(50, 120, 300, 300));
+        label->setGeometry(QRect(120, 140, 200, 200));
         label->setAutoFillBackground(false);
         label->setStyleSheet(QString::fromUtf8(""));
         label->setPixmap(QPixmap(QString::fromUtf8("../../../Downloads/InShot_20250329_211340704 (1).png")));
