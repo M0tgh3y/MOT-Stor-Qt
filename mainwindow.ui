@@ -140,7 +140,7 @@ QPushButton:pressed {
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../Downloads/InShot_20250329_211340704 (1).png</pixmap>
+     <pixmap resource="resources.qrc">:/image/icons/mimi.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>false</bool>
@@ -159,6 +159,8 @@ QPushButton:pressed {
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>
