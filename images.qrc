@@ -1,1 +1,6 @@
-<RCC/>
+<RCC>
+    <qresource prefix="/icon">
+        <file>icon/mimi.png</file>
+        <file>icon/stor.png</file>
+    </qresource>
+</RCC>

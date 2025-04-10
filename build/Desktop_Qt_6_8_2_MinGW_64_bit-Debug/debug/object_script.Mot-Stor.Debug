@@ -10,6 +10,7 @@ debug/managerdashboard.o
 debug/managerwindow.o
 debug/showmanager.o
 debug/showproduct.o
+debug/qrc_images.o
 debug/qrc_qmake_qmake_qm_files.o
 debug/moc_addnewcustomer.o
 debug/moc_addnewmanager.o
