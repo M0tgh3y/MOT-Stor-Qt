@@ -10,7 +10,6 @@ release/managerdashboard.o
 release/managerwindow.o
 release/showmanager.o
 release/showproduct.o
-release/qrc_idn.o
 release/qrc_qmake_qmake_qm_files.o
 release/moc_addnewcustomer.o
 release/moc_addnewmanager.o
