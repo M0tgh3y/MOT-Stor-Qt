@@ -11,7 +11,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
 
     setWindowTitle("MOT STOR");
-    setWindowIcon(QIcon("C:/Users/Ariyana-Soft/Downloads/icons8-store-50.png"));
+    setWindowIcon(QIcon("C:/Users/Ariyana-Soft/Desktop/Mot-Stor/Mot-Stor/icon/stor.png"));
 }
 
 MainWindow::~MainWindow()

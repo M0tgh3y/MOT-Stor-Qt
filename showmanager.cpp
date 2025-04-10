@@ -14,7 +14,7 @@ showmanager::showmanager(QWidget *parent)
     ui->setupUi(this);
 
     setWindowTitle("Show Manager's List");
-    setWindowIcon(QIcon("C:/Users/Ariyana-Soft/Downloads/icons8-store-50.png"));
+    setWindowIcon(QIcon("C:/Users/Ariyana-Soft/Desktop/Mot-Stor/Mot-Stor/icon/stor.png"));
 
     ui->tableWidget->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
     ui->tableWidget->verticalHeader()->setVisible(false);

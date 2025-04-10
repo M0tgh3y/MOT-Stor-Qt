@@ -13,7 +13,7 @@ managerdashboard::managerdashboard(QWidget *parent)
     ui->setupUi(this);
 
     setWindowTitle("Manager Dashboard");
-    setWindowIcon(QIcon("C:/Users/Ariyana-Soft/Downloads/icons8-store-50.png"));
+    setWindowIcon(QIcon("C:/Users/Ariyana-Soft/Desktop/Mot-Stor/Mot-Stor/icon/stor.png"));
 
     //resize(400, 400);
 }

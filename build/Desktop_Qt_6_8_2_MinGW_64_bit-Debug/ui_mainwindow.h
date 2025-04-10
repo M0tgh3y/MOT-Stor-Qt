@@ -114,6 +114,7 @@ public:
         label->setGeometry(QRect(120, 150, 200, 200));
         label->setPixmap(QPixmap(QString::fromUtf8(":/icon/icon/mimi.png")));
         label->setScaledContents(true);
+        label->setAlignment(Qt::AlignmentFlag::AlignCenter);
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");

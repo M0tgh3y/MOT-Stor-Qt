@@ -9,7 +9,7 @@ customerdashboard::customerdashboard(QWidget *parent)
     ui->setupUi(this);
 
     setWindowTitle("Customer Dashboard");
-    setWindowIcon(QIcon("C:/Users/Ariyana-Soft/Downloads/icons8-store-50.png"));
+    setWindowIcon(QIcon("C:/Users/Ariyana-Soft/Desktop/Mot-Stor/Mot-Stor/icon/stor.png"));
 }
 
 customerdashboard::~customerdashboard()

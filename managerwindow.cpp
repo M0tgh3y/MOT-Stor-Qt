@@ -15,7 +15,7 @@ ManagerWindow::ManagerWindow(QWidget *parent)
     ui->setupUi(this);
 
     setWindowTitle("Manager Login");
-    setWindowIcon(QIcon("C:/Users/Ariyana-Soft/Downloads/icons8-store-50.png"));
+    setWindowIcon(QIcon("C:/Users/Ariyana-Soft/Desktop/Mot-Stor/Mot-Stor/icon/stor.png"));
 
     connect(ui->ok, SIGNAL(clicked(bool)), this, SLOT(on_ok_clicked()), Qt::UniqueConnection);
 

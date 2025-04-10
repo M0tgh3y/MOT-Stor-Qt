@@ -11,7 +11,7 @@ addnewcustomer::addnewcustomer(QWidget *parent)
     ui->setupUi(this);
 
     setWindowTitle("Add New Customer");
-    setWindowIcon(QIcon("C:/Users/Ariyana-Soft/Downloads/icons8-store-50.png"));
+    setWindowIcon(QIcon("C:/Users/Ariyana-Soft/Desktop/Mot-Stor/Mot-Stor/icon/stor.png"));
 
     connect(ui->add, &QPushButton::clicked, this, &addnewcustomer::on_add_clicked);
 }

@@ -11,6 +11,8 @@ addnewproduct::addnewproduct(QWidget *parent)
     , ui(new Ui::addnewproduct)
 {
     ui->setupUi(this);
+    setWindowTitle("Add a Product");
+    setWindowIcon(QIcon("C:/Users/Ariyana-Soft/Desktop/Mot-Stor/Mot-Stor/icon/stor.png"));
 }
 
 addnewproduct::~addnewproduct()
