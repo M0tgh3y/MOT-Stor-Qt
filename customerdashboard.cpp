@@ -26,8 +26,3 @@ void customerdashboard::on_back_clicked()
 }
 
 
-void customerdashboard::on_addNPro_clicked()
-{
-
-}
-

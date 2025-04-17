@@ -20,14 +20,14 @@ QT_BEGIN_NAMESPACE
 class Ui_customerdashboard
 {
 public:
-    QPushButton *addNMan;
-    QPushButton *addNPro;
-    QPushButton *showMan;
+    QPushButton *buy;
+    QPushButton *myprofile;
+    QPushButton *paspurches;
     QPushButton *showPro;
-    QLabel *mandash;
-    QPushButton *incrasePro;
+    QLabel *cusdashboard;
+    QPushButton *empty;
     QPushButton *back;
-    QPushButton *incrasePro_2;
+    QPushButton *empty2;
 
     void setupUi(QWidget *customerdashboard)
     {
@@ -35,16 +35,16 @@ public:
             customerdashboard->setObjectName("customerdashboard");
         customerdashboard->resize(700, 550);
         customerdashboard->setStyleSheet(QString::fromUtf8("background-color: rgb(85, 170, 127)"));
-        addNMan = new QPushButton(customerdashboard);
-        addNMan->setObjectName("addNMan");
-        addNMan->setGeometry(QRect(365, 90, 220, 100));
+        buy = new QPushButton(customerdashboard);
+        buy->setObjectName("buy");
+        buy->setGeometry(QRect(365, 90, 220, 100));
         QSizePolicy sizePolicy(QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Maximum);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(addNMan->sizePolicy().hasHeightForWidth());
-        addNMan->setSizePolicy(sizePolicy);
-        addNMan->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
-        addNMan->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        sizePolicy.setHeightForWidth(buy->sizePolicy().hasHeightForWidth());
+        buy->setSizePolicy(sizePolicy);
+        buy->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
+        buy->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    font-family: \"Open Sans\", sans-serif;\n"
 "    font-size: 16px;\n"
 "    letter-spacing: 2px;\n"
@@ -72,13 +72,13 @@ public:
 "    left: 5px;\n"
 "}\n"
 ""));
-        addNPro = new QPushButton(customerdashboard);
-        addNPro->setObjectName("addNPro");
-        addNPro->setGeometry(QRect(115, 90, 220, 100));
-        sizePolicy.setHeightForWidth(addNPro->sizePolicy().hasHeightForWidth());
-        addNPro->setSizePolicy(sizePolicy);
-        addNPro->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
-        addNPro->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        myprofile = new QPushButton(customerdashboard);
+        myprofile->setObjectName("myprofile");
+        myprofile->setGeometry(QRect(115, 90, 220, 100));
+        sizePolicy.setHeightForWidth(myprofile->sizePolicy().hasHeightForWidth());
+        myprofile->setSizePolicy(sizePolicy);
+        myprofile->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
+        myprofile->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    font-family: \"Open Sans\", sans-serif;\n"
 "    font-size: 16px;\n"
 "    letter-spacing: 2px;\n"
@@ -106,13 +106,13 @@ public:
 "    left: 5px;\n"
 "}\n"
 ""));
-        showMan = new QPushButton(customerdashboard);
-        showMan->setObjectName("showMan");
-        showMan->setGeometry(QRect(365, 210, 220, 100));
-        sizePolicy.setHeightForWidth(showMan->sizePolicy().hasHeightForWidth());
-        showMan->setSizePolicy(sizePolicy);
-        showMan->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
-        showMan->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        paspurches = new QPushButton(customerdashboard);
+        paspurches->setObjectName("paspurches");
+        paspurches->setGeometry(QRect(365, 210, 220, 100));
+        sizePolicy.setHeightForWidth(paspurches->sizePolicy().hasHeightForWidth());
+        paspurches->setSizePolicy(sizePolicy);
+        paspurches->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
+        paspurches->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    font-family: \"Open Sans\", sans-serif;\n"
 "    font-size: 16px;\n"
 "    letter-spacing: 2px;\n"
@@ -174,10 +174,10 @@ public:
 "    left: 5px;\n"
 "}\n"
 ""));
-        mandash = new QLabel(customerdashboard);
-        mandash->setObjectName("mandash");
-        mandash->setGeometry(QRect(220, 25, 260, 40));
-        mandash->setStyleSheet(QString::fromUtf8("font-family: \"Open Sans\", sans-serif;\n"
+        cusdashboard = new QLabel(customerdashboard);
+        cusdashboard->setObjectName("cusdashboard");
+        cusdashboard->setGeometry(QRect(220, 25, 260, 40));
+        cusdashboard->setStyleSheet(QString::fromUtf8("font-family: \"Open Sans\", sans-serif;\n"
 "font-size: 19px;\n"
 "letter-spacing: 2px;\n"
 "text-decoration: none;\n"
@@ -188,13 +188,13 @@ public:
 "display: flex;\n"
 "justify-content: center;\n"
 "align-items: center;"));
-        incrasePro = new QPushButton(customerdashboard);
-        incrasePro->setObjectName("incrasePro");
-        incrasePro->setGeometry(QRect(115, 330, 220, 100));
-        sizePolicy.setHeightForWidth(incrasePro->sizePolicy().hasHeightForWidth());
-        incrasePro->setSizePolicy(sizePolicy);
-        incrasePro->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
-        incrasePro->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        empty = new QPushButton(customerdashboard);
+        empty->setObjectName("empty");
+        empty->setGeometry(QRect(115, 330, 220, 100));
+        sizePolicy.setHeightForWidth(empty->sizePolicy().hasHeightForWidth());
+        empty->setSizePolicy(sizePolicy);
+        empty->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
+        empty->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    font-family: \"Open Sans\", sans-serif;\n"
 "    font-size: 11px;\n"
 "    letter-spacing: 2px;\n"
@@ -256,13 +256,13 @@ public:
 "    left: 5px;\n"
 "}\n"
 ""));
-        incrasePro_2 = new QPushButton(customerdashboard);
-        incrasePro_2->setObjectName("incrasePro_2");
-        incrasePro_2->setGeometry(QRect(365, 330, 220, 100));
-        sizePolicy.setHeightForWidth(incrasePro_2->sizePolicy().hasHeightForWidth());
-        incrasePro_2->setSizePolicy(sizePolicy);
-        incrasePro_2->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
-        incrasePro_2->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        empty2 = new QPushButton(customerdashboard);
+        empty2->setObjectName("empty2");
+        empty2->setGeometry(QRect(365, 330, 220, 100));
+        sizePolicy.setHeightForWidth(empty2->sizePolicy().hasHeightForWidth());
+        empty2->setSizePolicy(sizePolicy);
+        empty2->setCursor(QCursor(Qt::CursorShape::PointingHandCursor));
+        empty2->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    font-family: \"Open Sans\", sans-serif;\n"
 "    font-size: 11px;\n"
 "    letter-spacing: 2px;\n"
@@ -299,14 +299,14 @@ public:
     void retranslateUi(QWidget *customerdashboard)
     {
         customerdashboard->setWindowTitle(QCoreApplication::translate("customerdashboard", "Form", nullptr));
-        addNMan->setText(QCoreApplication::translate("customerdashboard", "buy", nullptr));
-        addNPro->setText(QCoreApplication::translate("customerdashboard", "my profile", nullptr));
-        showMan->setText(QCoreApplication::translate("customerdashboard", "past purchases", nullptr));
+        buy->setText(QCoreApplication::translate("customerdashboard", "buy", nullptr));
+        myprofile->setText(QCoreApplication::translate("customerdashboard", "my profile", nullptr));
+        paspurches->setText(QCoreApplication::translate("customerdashboard", "past purchases", nullptr));
         showPro->setText(QCoreApplication::translate("customerdashboard", "show produc's", nullptr));
-        mandash->setText(QCoreApplication::translate("customerdashboard", "customer DASHBOARD", nullptr));
-        incrasePro->setText(QString());
+        cusdashboard->setText(QCoreApplication::translate("customerdashboard", "customer DASHBOARD", nullptr));
+        empty->setText(QString());
         back->setText(QCoreApplication::translate("customerdashboard", "back", nullptr));
-        incrasePro_2->setText(QString());
+        empty2->setText(QString());
     } // retranslateUi
 
 };
