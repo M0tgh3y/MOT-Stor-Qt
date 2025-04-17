@@ -25,3 +25,9 @@ void customerdashboard::on_back_clicked()
     mainWindow->show();
 }
 
+
+void customerdashboard::on_addNPro_clicked()
+{
+
+}
+
