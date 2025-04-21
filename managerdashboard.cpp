@@ -14,8 +14,6 @@ managerdashboard::managerdashboard(QWidget *parent)
 
     setWindowTitle("Manager Dashboard");
     setWindowIcon(QIcon("C:/Users/Ariyana-Soft/Desktop/Mot-Stor/Mot-Stor/icon/stor.png"));
-
-    //resize(400, 400);
 }
 
 managerdashboard::~managerdashboard()
