@@ -2,6 +2,7 @@
 #include "ui_showproduct.h"
 #include "global.h"
 #include "managerdashboard.h"
+#include "customerdashboard.h"
 
 #include <QFile>
 #include <QTextStream>

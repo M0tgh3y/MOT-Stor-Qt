@@ -1,6 +1,7 @@
 #include "customerdashboard.h"
 #include "ui_customerdashboard.h"
 #include "mainwindow.h"
+#include "showproduct.h"
 
 customerdashboard::customerdashboard(QWidget *parent)
     : QWidget(parent)
@@ -25,4 +26,12 @@ void customerdashboard::on_back_clicked()
     mainWindow->show();
 }
 
+
+
+void customerdashboard::on_showPro_clicked()
+{
+    showproduct *showWindow = new showproduct();
+    showWindow->show();
+    this->close();
+}
 

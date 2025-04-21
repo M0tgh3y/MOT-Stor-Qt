@@ -18,7 +18,7 @@ public:
 private slots:
     void on_back_clicked();
 
-    void on_addNPro_clicked();
+    void on_showPro_clicked();
 
 private:
     Ui::customerdashboard *ui;
